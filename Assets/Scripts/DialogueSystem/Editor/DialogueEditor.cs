@@ -2,12 +2,17 @@ using System;
 using TMPro;
 using UnityEditor;
 using UnityEditor.Callbacks;
+using UnityEngine;
 
 namespace DialogueSystem.Editor
 {
     public class DialogueEditor : EditorWindow
     {
         private static Dialogue _selectedDialogue = null;
+        
+        private static GUIStyle _nodeStyle;
+        
+        private DialogueNode _draggingNode = null;
         
         [MenuItem("Dialogue System/Dialogue Editor")]
         public static void ShowEditorWindow()
@@ -36,18 +41,60 @@ namespace DialogueSystem.Editor
             }
             else
             {
+                ProcessEvents(Event.current);
                 foreach (var node in _selectedDialogue.GetAllNodes())
                 {
-                    var newText = EditorGUILayout.TextField(node.text);
-                    var newUniqueID = EditorGUILayout.TextField(node.uniqueID);
-                    EditorGUI.BeginChangeCheck();
-                    if (EditorGUI.EndChangeCheck()) continue;
-                    
-                    Undo.RecordObject(_selectedDialogue, "Update Dialogue Text");
-                    node.text = newText;
-                    node.uniqueID = newUniqueID;
+                    OnGUINode(node);
                 }
             }
+        }
+        
+        private void ProcessEvents(Event e)
+        {
+            switch (e.type)
+            {
+                case EventType.MouseDown when _draggingNode == null:
+                    _draggingNode = GetNodeAtPoint(e.mousePosition);
+                    break;
+                case EventType.MouseDrag when _draggingNode != null:
+                    Undo.RecordObject(_selectedDialogue, "Move Dialogue Node");
+                    _draggingNode.rect.position += e.delta;
+                    Repaint();
+                    break;
+                case EventType.MouseUp when _draggingNode != null:
+                    _draggingNode = null;
+                    break;
+            }
+        }
+
+        private DialogueNode GetNodeAtPoint(Vector2 eMousePosition)
+        {
+            DialogueNode foundNode = null;
+            foreach (var node in _selectedDialogue.GetAllNodes())
+            {
+                if (node.rect.Contains(eMousePosition))
+                {
+                    foundNode = node;
+                }
+            }
+
+            return foundNode;
+        }
+
+        private static void OnGUINode(DialogueNode node)
+        {
+            GUILayout.BeginArea(node.rect, _nodeStyle);
+            EditorGUILayout.LabelField("Node ID: " + node.uniqueID, EditorStyles.whiteLargeLabel);
+            var newText = EditorGUILayout.TextField(node.text);
+            var newUniqueID = EditorGUILayout.TextField(node.uniqueID);
+            EditorGUI.BeginChangeCheck();
+            if (EditorGUI.EndChangeCheck()) return;
+
+            Undo.RecordObject(_selectedDialogue, "Update Dialogue Text");
+            node.text = newText;
+            node.uniqueID = newUniqueID;
+            
+            GUILayout.EndArea();
         }
 
         private void OnSelectionChange()
@@ -67,6 +114,12 @@ namespace DialogueSystem.Editor
         private void OnEnable()
         {
             Selection.selectionChanged += OnSelectionChange;
+            
+            _nodeStyle = new GUIStyle();
+            _nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+            _nodeStyle.normal.textColor = Color.white;
+            _nodeStyle.padding = new RectOffset(20, 20, 20, 20);
+            _nodeStyle.border = new RectOffset(12, 12, 12, 12);
         }
     }
 }
