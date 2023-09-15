@@ -44,11 +44,26 @@ namespace DialogueSystem.Editor
                 ProcessEvents(Event.current);
                 foreach (var node in _selectedDialogue.GetAllNodes())
                 {
-                    OnGUINode(node);
+                    DrawNode(node);
+                    DrawNodeConnection(node);
                 }
             }
         }
-        
+
+        private void DrawNodeConnection(DialogueNode node)
+        {
+            Vector3 startPosition = new Vector2(node.rect.xMax, node.rect.center.y);
+            foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
+            {
+                Vector3 endPosition = new Vector2(childNode.rect.xMin, childNode.rect.center.y);
+                Vector3 controlPointOffset = endPosition - startPosition;
+                controlPointOffset.y = 0;
+                controlPointOffset.x *= 0.8f;
+                Handles.DrawBezier(startPosition, endPosition, startPosition + controlPointOffset,
+                    endPosition - controlPointOffset, Color.white, null, 4f);
+            }
+        }
+
         private void ProcessEvents(Event e)
         {
             switch (e.type)
@@ -81,7 +96,7 @@ namespace DialogueSystem.Editor
             return foundNode;
         }
 
-        private static void OnGUINode(DialogueNode node)
+        private static void DrawNode(DialogueNode node)
         {
             GUILayout.BeginArea(node.rect, _nodeStyle);
             EditorGUILayout.LabelField("Node ID: " + node.uniqueID, EditorStyles.whiteLargeLabel);

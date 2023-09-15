@@ -11,7 +11,6 @@ namespace DialogueSystem
         public string text;
         public string[] children;
         
-        [HideInInspector]
-        public Rect rect = new Rect(0,0,200,100);
+        public Rect rect = new Rect(0,0,400,400);
     }
 }
