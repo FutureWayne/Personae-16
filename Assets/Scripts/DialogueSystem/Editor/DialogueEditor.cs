@@ -10,9 +10,16 @@ namespace DialogueSystem.Editor
     {
         private static Dialogue _selectedDialogue = null;
         
+        [NonSerialized]
         private static GUIStyle _nodeStyle;
-        
+        [NonSerialized]
         private DialogueNode _draggingNode = null;
+        [NonSerialized]
+        private DialogueNode _creatingNode = null;
+        [NonSerialized]
+        private DialogueNode _deletingNode = null;
+        [NonSerialized]
+        private DialogueNode _linkingParentNode = null;
         
         [MenuItem("Dialogue System/Dialogue Editor")]
         public static void ShowEditorWindow()
@@ -41,11 +48,34 @@ namespace DialogueSystem.Editor
             }
             else
             {
+                // Process GUI events
                 ProcessEvents(Event.current);
+                
+                // Draw the connections first so they appear behind the nodes
+                foreach (var node in _selectedDialogue.GetAllNodes())
+                {
+                    DrawNodeConnection(node);
+                }
+                
+                // Draw the nodes
                 foreach (var node in _selectedDialogue.GetAllNodes())
                 {
                     DrawNode(node);
-                    DrawNodeConnection(node);
+                }
+
+                // Create and delete nodes
+                if (_creatingNode != null)
+                {
+                    Undo.RecordObject(_selectedDialogue, "Add Dialogue Node");
+                    _selectedDialogue.CreateNode(_creatingNode);
+                    _creatingNode = null;
+                }
+                
+                if (_deletingNode != null)
+                {
+                    Undo.RecordObject(_selectedDialogue, "Delete Dialogue Node");
+                    _selectedDialogue.DeleteNode(_deletingNode);
+                    _deletingNode = null;
                 }
             }
         }
@@ -96,18 +126,50 @@ namespace DialogueSystem.Editor
             return foundNode;
         }
 
-        private static void DrawNode(DialogueNode node)
+        private void DrawNode(DialogueNode node)
         {
             GUILayout.BeginArea(node.rect, _nodeStyle);
-            EditorGUILayout.LabelField("Node ID: " + node.uniqueID, EditorStyles.whiteLargeLabel);
-            var newText = EditorGUILayout.TextField(node.text);
-            var newUniqueID = EditorGUILayout.TextField(node.uniqueID);
+            
             EditorGUI.BeginChangeCheck();
-            if (EditorGUI.EndChangeCheck()) return;
+            var newText = EditorGUILayout.TextField(node.text);
+            
+            // if the text has changed, record the change
+            if (!EditorGUI.EndChangeCheck())
+            {
+                Undo.RecordObject(_selectedDialogue, "Update Dialogue Text");
+                node.text = newText;
+            };
+            
+            // add buttons to add and delete nodes
+            GUILayout.BeginHorizontal();
+            if(GUILayout.Button("Add Child"))
+            {
+                _creatingNode = node;
+            }
 
-            Undo.RecordObject(_selectedDialogue, "Update Dialogue Text");
-            node.text = newText;
-            node.uniqueID = newUniqueID;
+            if (_linkingParentNode == null)
+            {
+                if( GUILayout.Button("Link"))
+                {
+                    _linkingParentNode = node;
+                }
+            }
+            else
+            {
+                if (GUILayout.Button("Child"))
+                {
+                    Undo.RecordObject(_selectedDialogue, "Add Dialogue Link");
+                    _linkingParentNode.children.Add(node.uniqueID);
+                    _linkingParentNode = null;
+                }
+            }
+            
+            if(GUILayout.Button("Delete Node"))
+            {
+                _deletingNode = node;
+            }
+            
+            GUILayout.EndHorizontal();
             
             GUILayout.EndArea();
         }
@@ -130,11 +192,16 @@ namespace DialogueSystem.Editor
         {
             Selection.selectionChanged += OnSelectionChange;
             
-            _nodeStyle = new GUIStyle();
-            _nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
-            _nodeStyle.normal.textColor = Color.white;
-            _nodeStyle.padding = new RectOffset(20, 20, 20, 20);
-            _nodeStyle.border = new RectOffset(12, 12, 12, 12);
+            _nodeStyle = new GUIStyle
+            {
+                normal =
+                {
+                    background = EditorGUIUtility.Load("node0") as Texture2D,
+                    textColor = Color.white
+                },
+                padding = new RectOffset(20, 20, 20, 20),
+                border = new RectOffset(12, 12, 12, 12)
+            };
         }
     }
 }
