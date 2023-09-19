@@ -62,9 +62,8 @@ public class ScriptReader : MonoBehaviour
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return; // Checks if Button holder has buttons in it.
 
-        for(int i = 0; i < _StoryScript.currentChoices.Count; i++)
+        foreach(var choice in _StoryScript.currentChoices)
         {
-            var choice = _StoryScript.currentChoices[i];
             var button = CreateChoiceButton(choice.text); // creates a choice button
 
             button.onClick.AddListener(() => OnClickChoiceButton(choice));
@@ -89,12 +88,12 @@ public class ScriptReader : MonoBehaviour
     void OnClickChoiceButton(Choice choice)
     {
         _StoryScript.ChooseChoiceIndex(choice.index);
-        RefreshChoiceView();
+        DestroyChoiceView();
         DisplayNextLine();
     }
 
 
-    void RefreshChoiceView()
+    void DestroyChoiceView()
     {
         if(choiceHolder != null)
         {
@@ -106,10 +105,8 @@ public class ScriptReader : MonoBehaviour
     }
 
 
-    public void ChangeName(string name)
+    public void ChangeName(string speakerName)
     {
-        string SpeakerName = name;
-
-        nameTag.text = SpeakerName;
+        nameTag.text = speakerName;
     }
 }
