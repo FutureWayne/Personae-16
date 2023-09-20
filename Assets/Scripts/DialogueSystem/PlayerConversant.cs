@@ -1,23 +1,92 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace DialogueSystem
 {
     public class PlayerConversant : MonoBehaviour
     {
         [SerializeField]
-        private Dialogue currentDialogue;
+        private Dialogue newDialogue;
         
-        // Start is called before the first frame update
-        void Start()
+        private Dialogue _currentDialogue;
+        
+        private DialogueNode _currentNode;
+        
+        private bool _isChoosing;
+        
+        public event Action OnConversationUpdated; 
+        
+        IEnumerator Start()
         {
+            yield return new WaitForSeconds(1);
+            StartDialogue(newDialogue);
+        }
         
+        public bool IsActive()
+        {
+            return _currentDialogue != null;
         }
 
-        // Update is called once per frame
-        void Update()
+        /**********************************************
+         * Call this method to start a new conversation
+         **********************************************/
+        private void StartDialogue(Dialogue dialogue)
         {
+            _currentDialogue = dialogue;
+            _currentNode = _currentDialogue.GetRootNode();
+            
+            OnConversationUpdated?.Invoke();
+        }
         
+        public string GetCurrentNodeText()
+        {
+            return _currentNode == null ? "" : _currentNode.GetText();
+        }
+
+        public void MoveToNextNode()
+        {
+            if (_currentDialogue == null)
+            {
+                return;
+            }
+            
+            if(_currentDialogue.GetPlayerChildrenNodes(_currentNode).Any())
+            {
+                OnConversationUpdated?.Invoke();
+                _isChoosing = true;
+                return;
+            }
+
+            // set current node to a random child
+            var children = _currentDialogue.GetAIChildrenNodes(_currentNode).ToArray();
+            _currentNode = children.Length > 0 ? children[UnityEngine.Random.Range(0, children.Length)] : null;
+            
+            OnConversationUpdated?.Invoke();
+        }
+        
+        public bool HasNextNode()
+        {
+            return _currentDialogue != null && _currentDialogue.GetAllChildrenNodes(_currentNode).Any();
+        }
+        
+        public IEnumerable<DialogueNode> GetChoiceNodes()
+        {
+            return _currentDialogue.GetPlayerChildrenNodes(_currentNode);
+        }
+        
+        public bool IsChoosing()
+        {
+            return _isChoosing;
+        }
+        
+        public void SelectChoiceNode(DialogueNode chosenNode)
+        {
+            _currentNode = chosenNode;
+            _isChoosing = false;
+            MoveToNextNode();
         }
     }
 }

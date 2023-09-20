@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,77 +6,73 @@ namespace DialogueSystem
 {
     public class DialogueNode : ScriptableObject
     {
-        [SerializeField] 
-        private string text;
-
-        private readonly List<string> _children = new List<string>();
-
-        private Rect _rect = new Rect(0, 0, 300, 200);
-
         [SerializeField]
-        private bool _isPlayerSpeaking;
+        private bool isPlayerSpeaking;
+        [SerializeField]
+        string text;
+        [SerializeField]
+        List<string> children = new();
+        [SerializeField]
+        Rect rect = new Rect(0, 0, 200, 100);
 
-        public List<string> GetChildren()
-        {
-            return _children;
-        }
-        
-        public bool IsPlayerSpeaking()
-        {
-            return _isPlayerSpeaking;
-        }
-        
         public Rect GetRect()
         {
-            return _rect;
+            return rect;
         }
 
         public string GetText()
         {
             return text;
         }
-        
-#if UNITY_EDITOR
-        public void SetText(string s)
+
+        public List<string> GetChildren()
         {
-            if (!string.Equals(text, s, StringComparison.Ordinal))
+            return children;
+        }
+
+        public bool IsPlayerSpeaking()
+        {
+            return isPlayerSpeaking;
+        }
+
+#if UNITY_EDITOR
+        public void SetPosition(Vector2 newPosition)
+        {
+            Undo.RecordObject(this, "Move Dialogue Node");
+            rect.position = newPosition;
+            EditorUtility.SetDirty(this);
+        }
+
+        public void SetText(string newText)
+        {
+            if (newText != text)
             {
                 Undo.RecordObject(this, "Update Dialogue Text");
-                text = s;
+                text = newText;
                 EditorUtility.SetDirty(this);
             }
         }
 
-        public void SetPosition(Vector2 newNodeOffset)
-        {
-            Undo.RecordObject(this, "Move Dialogue Node");
-            _rect.position = newNodeOffset;
-            EditorUtility.SetDirty(this);
-        }
-
-        public void AddChild(string newNodeName)
+        public void AddChild(string childID)
         {
             Undo.RecordObject(this, "Add Dialogue Link");
-            _children.Add(newNodeName);
+            children.Add(childID);
             EditorUtility.SetDirty(this);
         }
 
-        public void RemoveChild(string s)
+        public void RemoveChild(string childID)
         {
             Undo.RecordObject(this, "Remove Dialogue Link");
-            _children.Remove(s);
+            children.Remove(childID);
             EditorUtility.SetDirty(this);
         }
-        
-        public void SetPlayerSpeaking(bool b)
+
+        public void SetPlayerSpeaking(bool newIsPlayerSpeaking)
         {
             Undo.RecordObject(this, "Change Dialogue Speaker");
-            _isPlayerSpeaking = b;
+            isPlayerSpeaking = newIsPlayerSpeaking;
             EditorUtility.SetDirty(this);
         }
 #endif
-        
     }
-
-    
 }

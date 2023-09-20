@@ -27,13 +27,14 @@ namespace DialogueSystem.Editor
         private const float CanvasSize = 4000;
         private const float BackgroundSize = 50;
         
-        [MenuItem("Dialogue System/Dialogue Editor")]
+        [MenuItem("Window/Dialogue Editor")]
         public static void ShowEditorWindow()
         {
             GetWindow<DialogueEditor>("Dialogue Editor");
         }
         
         [OnOpenAsset(1)]
+        // Show up the editor window when a dialogue is selected
         public static bool OpenDialogue(int instanceID, int line)
         {
             Dialogue dialogue = EditorUtility.InstanceIDToObject(instanceID) as Dialogue;
@@ -46,6 +47,7 @@ namespace DialogueSystem.Editor
             return false;
         }
 
+        // Update is called once per frame
         private void OnGUI()
         {
             if (_selectedDialogue is null)
@@ -95,7 +97,7 @@ namespace DialogueSystem.Editor
         private void DrawNodeConnection(DialogueNode node)
         {
             Vector3 startPosition = new Vector2(node.GetRect().xMax, node.GetRect().center.y);
-            foreach (DialogueNode childNode in _selectedDialogue.GetAllChildren(node))
+            foreach (DialogueNode childNode in _selectedDialogue.GetAllChildrenNodes(node))
             {
                 Vector3 endPosition = new Vector2(childNode.GetRect().xMin, childNode.GetRect().center.y);
                 Vector3 controlPointOffset = endPosition - startPosition;
@@ -178,7 +180,7 @@ namespace DialogueSystem.Editor
         private void DrawButtons(DialogueNode node)
         {
             // Add Button
-            if (GUILayout.Button("Add Child"))
+            if (GUILayout.Button("+"))
             {
                 _creatingNode = node;
             }
@@ -218,7 +220,7 @@ namespace DialogueSystem.Editor
             }
 
             // Delete Button
-            if (GUILayout.Button("Delete Node"))
+            if (GUILayout.Button("-"))
             {
                 _deletingNode = node;
             }
