@@ -1,26 +1,26 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
 using UnityEngine;
-using static System.Guid;
+using UnityEditor;
 
 namespace DialogueSystem
 {
-    public class Dialogue : ScriptableObject
+    [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue", order = 0)]
+    public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] 
-        private List<DialogueNode> nodes = new List<DialogueNode>();
+        private List<DialogueNode> nodes = new();
+        [SerializeField] 
+        private Vector2 newNodeOffset = new(250, 0);
 
         private readonly Dictionary<string, DialogueNode> _nodeLookup = new();
         
         private void OnValidate()
         {
             _nodeLookup.Clear();
-            foreach (var node in GetAllNodes())
+            foreach (DialogueNode node in GetAllNodes())
             {
-                _nodeLookup[node.uniqueID] = node;
+                _nodeLookup[node.name] = node;
             }
         }
 
@@ -28,74 +28,113 @@ namespace DialogueSystem
         {
             return nodes;
         }
-        
+
         public DialogueNode GetRootNode()
         {
             return nodes[0];
         }
 
-        public IEnumerable GetAllChildren(DialogueNode parentNode)
+        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
-            return parentNode.children.Select(childUniqueID => _nodeLookup[childUniqueID]);
-        }
-
-        public void InitializeRootNode()
-        {
-            if (nodes.Count == 0)
+            foreach (string childID in parentNode.GetChildren())
             {
-                DialogueNode node = new DialogueNode
+                if (_nodeLookup.TryGetValue(childID, out var value))
                 {
-                    text = "Start",
-                    uniqueID = NewGuid().ToString()
-                };
-                nodes.Add(node);
+                    yield return value;
+                }
             }
         }
 
-        public void CreateNode(DialogueNode parentNode)
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
         {
-            DialogueNode newNode = new DialogueNode
+            foreach (DialogueNode node in GetAllChildren(currentNode))
             {
-                text = "New Node",
-                uniqueID = NewGuid().ToString(),
-                rect = new Rect(parentNode.rect.position + new Vector2(300, 0), new Vector2(200, 100))
-            };
-            nodes.Add(newNode);
-            parentNode.children.Add(newNode.uniqueID);
-            OnValidate();
+                if (node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
         }
-        
+
+
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(currentNode))
+            {
+                if (!node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+
+#if UNITY_EDITOR
+        public void CreateNode(DialogueNode parent)
+        {
+            DialogueNode newNode = MakeNode(parent);
+            Undo.RegisterCreatedObjectUndo(newNode, "Created Dialogue Node");
+            Undo.RecordObject(this, "Added Dialogue Node");
+            AddNode(newNode);
+        }
+
         public void DeleteNode(DialogueNode nodeToDelete)
         {
+            Undo.RecordObject(this, "Deleted Dialogue Node");
             nodes.Remove(nodeToDelete);
             OnValidate();
             CleanDanglingChildren(nodeToDelete);
+            Undo.DestroyObjectImmediate(nodeToDelete);
+        }
+
+        private DialogueNode MakeNode(DialogueNode parent)
+        {
+            DialogueNode newNode = CreateInstance<DialogueNode>();
+            newNode.name = Guid.NewGuid().ToString();
+            if (parent is null) return newNode;
+            parent.AddChild(newNode.name);
+            newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+            newNode.SetPosition(parent.GetRect().position + newNodeOffset);
+
+            return newNode;
+        }
+
+        private void AddNode(DialogueNode newNode)
+        {
+            nodes.Add(newNode);
+            OnValidate();
         }
 
         private void CleanDanglingChildren(DialogueNode nodeToDelete)
         {
-            foreach (var node in GetAllNodes())
+            foreach (DialogueNode node in GetAllNodes())
             {
-                node.children.Remove(nodeToDelete.uniqueID);
+                node.RemoveChild(nodeToDelete.name);
             }
         }
-    }
-    
-    public static class DialogueCreator
-    {
-        [MenuItem("Assets/Create/DialogueSystem/Dialogue")]
-        public static void CreateDialogue()
-        {
-            Dialogue dialogueAsset = ScriptableObject.CreateInstance<Dialogue>();
-            
-            dialogueAsset.InitializeRootNode();
+#endif
 
-            // Create a new asset file at the selected path and save the asset to it.
-            ProjectWindowUtil.CreateAsset(dialogueAsset, "New Dialogue.asset");
-            AssetDatabase.SaveAssets();
-            
-            EditorUtility.FocusProjectWindow();
-            Selection.activeObject = dialogueAsset;
+        public void OnBeforeSerialize()
+        {
+#if UNITY_EDITOR
+            if (nodes.Count == 0)
+            {
+                var newNode = MakeNode(null);
+                AddNode(newNode);
+            }
+
+            if (AssetDatabase.GetAssetPath(this) == "") return;
+            foreach (var node in GetAllNodes())
+            {
+                if (AssetDatabase.GetAssetPath(node) == "")
+                {
+                    AssetDatabase.AddObjectToAsset(node, this);
+                }
+            }
+#endif
+        }
+
+        public void OnAfterDeserialize()
+        {
         }
     }
 }
