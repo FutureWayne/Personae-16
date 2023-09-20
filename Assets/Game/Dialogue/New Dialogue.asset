@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2416854395209435515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7b54e9ec-1d06-4588-9982-54471f92f426
+  m_EditorClassIdentifier: 
+  text: Hi back
+  _isPlayerSpeaking: 0
+--- !u!114 &-1947182606055751588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: df2c0c4b-240c-43cc-b0a6-cc49aba2e5fa
+  m_EditorClassIdentifier: 
+  text: How are you
+  _isPlayerSpeaking: 1
+--- !u!114 &-1563212746942253581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 3dfe7a93-4921-4f39-9873-e5ad66276541
+  m_EditorClassIdentifier: 
+  text: I'm good
+  _isPlayerSpeaking: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,12 +55,37 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: asdasd
-    text: 3333
-    children: []
-  - uniqueID: asd
-    text: 12123123123
-    children: []
-  - uniqueID: 123312313
-    text: ssss
-    children: []
+  - {fileID: 2291175016961109211}
+  - {fileID: 1171470614998897705}
+  - {fileID: -1947182606055751588}
+  - {fileID: -2416854395209435515}
+  - {fileID: -1563212746942253581}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1171470614998897705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 24260a83-c527-4b3b-b8aa-4793a2291b89
+  m_EditorClassIdentifier: 
+  text: Hi
+  _isPlayerSpeaking: 1
+--- !u!114 &2291175016961109211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: b00525a9-a9e4-456c-bad6-fe1a71b30e23
+  m_EditorClassIdentifier: 
+  text: Hello
+  _isPlayerSpeaking: 0
