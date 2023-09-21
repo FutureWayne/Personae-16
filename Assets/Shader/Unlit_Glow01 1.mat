@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 3
+    - _FresnelPower: 0.92
     m_Colors:
     - _Color: {r: 1.2341472, g: 3.63784, b: 1.2183332, a: 1}
     - _ScrollDirection: {r: 0, g: 0, b: 0, a: 0}
