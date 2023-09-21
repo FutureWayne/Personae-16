@@ -35,7 +35,11 @@ namespace UI
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                OnClickNext();
+                if (_playerConversant.IsActive() && !_playerConversant.IsChoosing())
+                {
+                    OnClickNext();
+                }
+                
             }
         }
         
@@ -47,7 +51,7 @@ namespace UI
         // Method registered to the OnConversationUpdated event
         private void UpdateUI()
         {
-            if (!_playerConversant.IsActive() || _playerConversant == null)
+            if (!_playerConversant.IsActive() || _playerConversant is null)
             {
                 gameObject.SetActive(false);
                 return;

@@ -43,23 +43,23 @@ namespace DialogueSystem
         
         public string GetCurrentNodeText()
         {
-            return _currentNode == null ? "" : _currentNode.GetText();
+            return _currentNode is null ? "" : _currentNode.GetText();
         }
 
         public void MoveToNextNode()
         {
-            if (_currentDialogue == null)
+            if (_currentNode is null || !HasNextNode())
             {
                 return;
             }
             
             if(_currentDialogue.GetPlayerChildrenNodes(_currentNode).Any())
             {
-                OnConversationUpdated?.Invoke();
                 _isChoosing = true;
+                OnConversationUpdated?.Invoke();
                 return;
             }
-
+            
             // set current node to a random child
             var children = _currentDialogue.GetAIChildrenNodes(_currentNode).ToArray();
             _currentNode = children.Length > 0 ? children[UnityEngine.Random.Range(0, children.Length)] : null;
