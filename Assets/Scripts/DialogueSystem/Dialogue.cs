@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 
@@ -8,15 +9,15 @@ namespace DialogueSystem
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue", order = 0)]
     public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
-        [SerializeField] 
-        private List<DialogueNode> nodes = new();
-        [SerializeField] 
-        private Vector2 newNodeOffset = new(250, 0);
+        [SerializeField]
+        List<DialogueNode> nodes = new();
+        [SerializeField]
+        Vector2 newNodeOffset = new Vector2(250, 0);
 
-        private readonly Dictionary<string, DialogueNode> _nodeLookup = new();
-        
-        private void OnValidate()
-        {
+        private readonly Dictionary<string, DialogueNode> _nodeLookup = new(); // node look up dic - {node.name: node}
+
+        // Build node lookup dictionary
+        private void OnValidate() {
             _nodeLookup.Clear();
             foreach (DialogueNode node in GetAllNodes())
             {
@@ -33,39 +34,30 @@ namespace DialogueSystem
         {
             return nodes[0];
         }
-
-        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
+        
+        public IEnumerable<DialogueNode> GetAllChildrenNodes(DialogueNode parentNode)
         {
-            foreach (string childID in parentNode.GetChildren())
+            foreach (var childID in parentNode.GetChildren())
             {
                 if (_nodeLookup.TryGetValue(childID, out var value))
                 {
                     yield return value;
                 }
-            }
-        }
-
-        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
-        {
-            foreach (DialogueNode node in GetAllChildren(currentNode))
-            {
-                if (node.IsPlayerSpeaking())
+                else
                 {
-                    yield return node;
+                    Debug.LogWarning($"Missing node {childID}");
                 }
             }
         }
 
-
-        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        public IEnumerable<DialogueNode> GetPlayerChildrenNodes(DialogueNode currentNode)
         {
-            foreach (DialogueNode node in GetAllChildren(currentNode))
-            {
-                if (!node.IsPlayerSpeaking())
-                {
-                    yield return node;
-                }
-            }
+            return GetAllChildrenNodes(currentNode).Where(node => node.IsPlayerSpeaking());
+        }
+
+        public IEnumerable<DialogueNode> GetAIChildrenNodes(DialogueNode currentNode)
+        {
+            return GetAllChildrenNodes(currentNode).Where(node => !node.IsPlayerSpeaking());
         }
 
 #if UNITY_EDITOR
@@ -90,10 +82,12 @@ namespace DialogueSystem
         {
             DialogueNode newNode = CreateInstance<DialogueNode>();
             newNode.name = Guid.NewGuid().ToString();
-            if (parent is null) return newNode;
-            parent.AddChild(newNode.name);
-            newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
-            newNode.SetPosition(parent.GetRect().position + newNodeOffset);
+            if (parent != null)
+            {
+                parent.AddChild(newNode.name);
+                newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
+                newNode.SetPosition(parent.GetRect().position + newNodeOffset);
+            }
 
             return newNode;
         }
@@ -118,16 +112,18 @@ namespace DialogueSystem
 #if UNITY_EDITOR
             if (nodes.Count == 0)
             {
-                var newNode = MakeNode(null);
+                DialogueNode newNode = MakeNode(null);
                 AddNode(newNode);
             }
 
-            if (AssetDatabase.GetAssetPath(this) == "") return;
-            foreach (var node in GetAllNodes())
+            if (AssetDatabase.GetAssetPath(this) != "")
             {
-                if (AssetDatabase.GetAssetPath(node) == "")
+                foreach (DialogueNode node in GetAllNodes())
                 {
-                    AssetDatabase.AddObjectToAsset(node, this);
+                    if (AssetDatabase.GetAssetPath(node) == "")
+                    {
+                        AssetDatabase.AddObjectToAsset(node, this);
+                    }
                 }
             }
 #endif

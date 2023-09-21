@@ -1,3 +1,5 @@
+/*
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -110,3 +112,5 @@ public class ScriptReader : MonoBehaviour
         nameTag.text = speakerName;
     }
 }
+
+*/
