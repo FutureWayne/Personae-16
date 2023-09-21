@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9122592045676579027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ccdf7960-5fde-4360-91fe-ae972c1a4a81
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Well, as you\u2019ve already spent a lot of time on it, perhaps it\u2019s
+    best to put this away and think about it another time."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1073
+    y: 329
+    width: 200
+    height: 100
+--- !u!114 &-6602741709688105550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 062acf36-bd66-4ee9-b181-a3bf6d97a689
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Alex, the INTP character, is engrossed in solving a complex puzzle when the
+    player approaches.
+  children:
+  - 419f3a81-e3b0-4480-87a9-e866a3e95e9a
+  - 9deb6bae-f343-47af-af85-ec5f1872a3ae
+  - 704022ff-5745-4a7e-8ef3-26775fd00d11
+  rect:
+    serializedVersion: 2
+    x: 37
+    y: 451
+    width: 200
+    height: 100
+--- !u!114 &-5338375120607764572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ed360855-5282-4d93-ba50-a0eaebf79225
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Hmm, occasionally, when I need a change of scenery. It\u2019s quiet here,
+    which suits my preferences."
+  children:
+  - a17c08b4-59db-49c3-b411-633305b0e7ac
+  - 0c307c54-7e9b-4eee-8bdc-c3b979c0008c
+  rect:
+    serializedVersion: 2
+    x: 706
+    y: 732
+    width: 200
+    height: 100
+--- !u!114 &-3780927906977916183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 704022ff-5745-4a7e-8ef3-26775fd00d11
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Hi, I\u2019m [Player\u2019s Name]. What\u2019s that puzzle all about?"
+  children:
+  - 4cbd919d-f445-4c3e-bcda-450a6e6fc8a1
+  rect:
+    serializedVersion: 2
+    x: 395
+    y: 453
+    width: 200
+    height: 100
+--- !u!114 &-1662805227678963469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: a17c08b4-59db-49c3-b411-633305b0e7ac
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "That\u2019s understandable! Aside from puzzles, what else are you interested
+    in?"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1054
+    y: 734
+    width: 200
+    height: 100
+--- !u!114 &-556893165932676157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 419f3a81-e3b0-4480-87a9-e866a3e95e9a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Hey, I can see you\u2019re really into that puzzle. Mind if I watch for
+    a bit?"
+  children:
+  - 55f42a8a-9e08-4f95-bb1b-c42c28d0e8c5
+  rect:
+    serializedVersion: 2
+    x: 392
+    y: 188
+    width: 200
+    height: 100
+--- !u!114 &-456942303559884988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 56e90b4d-20ae-4146-beba-927698fec170
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "What\u2019s the ultimate goal of this puzzle? It looks challenging."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1072
+    y: 188
+    width: 200
+    height: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1910950879e1ba4eb77b0b117761e74, type: 3}
+  m_Name: INTP
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -6602741709688105550}
+  - {fileID: -556893165932676157}
+  - {fileID: 7692884875125271093}
+  - {fileID: -3780927906977916183}
+  - {fileID: 1718617070795833933}
+  - {fileID: 995175661106355178}
+  - {fileID: -5338375120607764572}
+  - {fileID: -456942303559884988}
+  - {fileID: 1334528782725983984}
+  - {fileID: -9122592045676579027}
+  - {fileID: 3781572796407257175}
+  - {fileID: 3011193619184374610}
+  - {fileID: -1662805227678963469}
+  - {fileID: 5582500166126155046}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &995175661106355178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 4cbd919d-f445-4c3e-bcda-450a6e6fc8a1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Hello [Player\u2019s Name]. This puzzle? Well, it\u2019s an interesting
+    one, I suppose. It involves deciphering a complex sequence of patterns and numbers
+    to unlock its hidden message. It\u2019s a bit of a diversion from the usual routine,
+    you know."
+  children:
+  - d423cb15-fd19-4c47-ad94-82e4df7515d0
+  - 57ee5fb2-a14b-475b-aca9-5ee43f23324f
+  rect:
+    serializedVersion: 2
+    x: 719
+    y: 453
+    width: 200
+    height: 100
+--- !u!114 &1334528782725983984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 4489ae15-b1a0-40b7-b0de-dcef7f78c5f2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Oh yeah, it definitely looks challenging. I\u2019m pretty good at puzzles
+    too. Want to see if we can solve it together?"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1084
+    y: 46
+    width: 200
+    height: 100
+--- !u!114 &1718617070795833933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 55f42a8a-9e08-4f95-bb1b-c42c28d0e8c5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Oh, not at all. Please, feel free to observe. This puzzle is quite intricate,
+    you know. I\u2019ve been working on it for a while now, trying to decipher its
+    logic."
+  children:
+  - 56e90b4d-20ae-4146-beba-927698fec170
+  - 4489ae15-b1a0-40b7-b0de-dcef7f78c5f2
+  - ccdf7960-5fde-4360-91fe-ae972c1a4a81
+  rect:
+    serializedVersion: 2
+    x: 696
+    y: 187
+    width: 200
+    height: 100
+--- !u!114 &3011193619184374610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 57ee5fb2-a14b-475b-aca9-5ee43f23324f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "That\u2019s great! Aside from puzzles, what else are you interested in?"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1069
+    y: 569
+    width: 200
+    height: 100
+--- !u!114 &3781572796407257175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d423cb15-fd19-4c47-ad94-82e4df7515d0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Oh wow! Puzzles are fascinating. Have you ever thought about the philosophy
+    behind problem-solving?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1071
+    y: 452
+    width: 200
+    height: 100
+--- !u!114 &5582500166126155046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 0c307c54-7e9b-4eee-8bdc-c3b979c0008c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Good for you! Well, I\u2019m currently reading a book on quantum physics
+    as part of my assignment. Have you ever thought about combining quantum physics
+    with cooking recipes? It could be revolutionary!"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1051
+    y: 885
+    width: 200
+    height: 100
+--- !u!114 &7692884875125271093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 9deb6bae-f343-47af-af85-ec5f1872a3ae
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "Hey, my name is [Player\u2019s Name]. Do you come here often?"
+  children:
+  - ed360855-5282-4d93-ba50-a0eaebf79225
+  rect:
+    serializedVersion: 2
+    x: 401
+    y: 733
+    width: 200
+    height: 100
