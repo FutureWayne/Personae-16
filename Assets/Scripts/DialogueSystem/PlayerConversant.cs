@@ -115,9 +115,9 @@ namespace DialogueSystem
                 return;
             }
             
-            if (_currentNode.GetOnEnterBuffID() > 0)
+            if (_currentNode.GetAddBuffID() > 0)
             {
-                var buff = BuffFactory.GetBuffByID(_currentNode.GetOnEnterBuffID());
+                var buff = BuffFactory.GetBuffByID(_currentNode.GetAddBuffID());
                 buff.AddBuff(gameObject);
             }
         }
@@ -129,9 +129,9 @@ namespace DialogueSystem
                 return;
             }
             
-            if (_currentNode.GetOnExitBuffID() > 0)
+            if (_currentNode.GetRemoveBuffID() > 0)
             {
-                var buff = BuffFactory.GetBuffByID(_currentNode.GetOnExitBuffID());
+                var buff = BuffFactory.GetBuffByID(_currentNode.GetRemoveBuffID());
                 buff.RemoveBuff(gameObject);
             }
         }

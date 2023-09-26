@@ -17,9 +17,9 @@ namespace DialogueSystem
         Rect rect = new Rect(0, 0, 200, 100);
         
         [SerializeField]
-        int onEnterBuffID;
+        int addBuffID;
         [SerializeField]
-        int onExitBuffID;
+        int removeBuffID;
 
         public Rect GetRect()
         {
@@ -41,14 +41,14 @@ namespace DialogueSystem
             return isPlayerSpeaking;
         }
         
-        public int GetOnEnterBuffID()
+        public int GetAddBuffID()
         {
-            return onEnterBuffID;
+            return addBuffID;
         }
         
-        public int GetOnExitBuffID()
+        public int GetRemoveBuffID()
         {
-            return onExitBuffID;
+            return removeBuffID;
         }
 
 #if UNITY_EDITOR
