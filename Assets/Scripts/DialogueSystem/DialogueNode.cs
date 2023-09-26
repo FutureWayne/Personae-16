@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -17,9 +18,9 @@ namespace DialogueSystem
         Rect rect = new Rect(0, 0, 200, 100);
         
         [SerializeField]
-        int onEnterBuffID;
+        List<int> listAddBuffID;
         [SerializeField]
-        int onExitBuffID;
+        List<int> listRemoveBuffID;
 
         public Rect GetRect()
         {
@@ -41,14 +42,14 @@ namespace DialogueSystem
             return isPlayerSpeaking;
         }
         
-        public int GetOnEnterBuffID()
+        public IEnumerable<int> GetAddBuffIDList()
         {
-            return onEnterBuffID;
+            return listAddBuffID;
         }
         
-        public int GetOnExitBuffID()
+        public IEnumerable<int> GetRemoveBuffIDList()
         {
-            return onExitBuffID;
+            return listRemoveBuffID;
         }
 
 #if UNITY_EDITOR

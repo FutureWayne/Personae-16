@@ -11,6 +11,7 @@ namespace Buff
         public EPersonalityAspects aspect;
         public int modifierA;
         public int modifierB;
+        public int duration;
         
         public void AddBuff(GameObject target)
         {

@@ -27,6 +27,7 @@ namespace Buff
                         buff.aspect = (EPersonalityAspects) (int.Parse(fields[2]) - 1);
                         buff.modifierA = int.Parse(fields[3]);
                         buff.modifierB = int.Parse(fields[4]);
+                        buff.duration = int.Parse(fields[5]);
                     
                         string assetPath = $"Assets/Game/Buffs/{buff.buffName}.asset";
                         AssetDatabase.CreateAsset(buff, assetPath);

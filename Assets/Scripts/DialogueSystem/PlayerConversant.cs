@@ -110,16 +110,7 @@ namespace DialogueSystem
 
         private void TriggerEnterAction()
         {
-            if (_currentNode is null)
-            {
-                return;
-            }
             
-            if (_currentNode.GetOnEnterBuffID() > 0)
-            {
-                var buff = BuffFactory.GetBuffByID(_currentNode.GetOnEnterBuffID());
-                buff.AddBuff(gameObject);
-            }
         }
 
         private void TriggerExitAction()
@@ -129,9 +120,15 @@ namespace DialogueSystem
                 return;
             }
             
-            if (_currentNode.GetOnExitBuffID() > 0)
+            foreach (var addBuffID in _currentNode.GetAddBuffIDList())
             {
-                var buff = BuffFactory.GetBuffByID(_currentNode.GetOnExitBuffID());
+                var buff = BuffFactory.GetBuffByID(addBuffID);
+                buff.AddBuff(gameObject);
+            }
+            
+            foreach (var removeBuffID in _currentNode.GetRemoveBuffIDList())
+            {
+                var buff = BuffFactory.GetBuffByID(removeBuffID);
                 buff.RemoveBuff(gameObject);
             }
         }
