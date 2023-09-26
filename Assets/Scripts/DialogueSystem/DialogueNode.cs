@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DialogueSystem
 {
@@ -14,6 +15,11 @@ namespace DialogueSystem
         List<string> children = new();
         [SerializeField]
         Rect rect = new Rect(0, 0, 200, 100);
+        
+        [SerializeField]
+        int onEnterBuffID;
+        [SerializeField]
+        int onExitBuffID;
 
         public Rect GetRect()
         {
@@ -33,6 +39,16 @@ namespace DialogueSystem
         public bool IsPlayerSpeaking()
         {
             return isPlayerSpeaking;
+        }
+        
+        public int GetOnEnterBuffID()
+        {
+            return onEnterBuffID;
+        }
+        
+        public int GetOnExitBuffID()
+        {
+            return onExitBuffID;
         }
 
 #if UNITY_EDITOR

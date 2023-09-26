@@ -43,10 +43,6 @@ namespace DialogueSystem
                 {
                     yield return value;
                 }
-                else
-                {
-                    Debug.LogWarning($"Missing node {childID}");
-                }
             }
         }
 
