@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64af18f3a112bfe46a02d8c996003e83, type: 3}
-  m_Name: Awkward
+  m_Name: Practical
   m_EditorClassIdentifier: 
-  id: 7
-  buffName: Awkward
-  aspect: 0
-  modifierA: 2
-  modifierB: -1
+  id: 6
+  buffName: Practical
+  aspect: 1
+  modifierA: -2
+  modifierB: 3
   duration: 3
