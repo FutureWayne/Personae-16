@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cecab9429353628418ed928ba8ef8755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newDialogue: {fileID: 11400000, guid: 531a5377d57568845a776044af2497c7, type: 2}
+  newDialogue: {fileID: 11400000, guid: b0cc0faac3b43b44caf5158c0b2beca7, type: 2}
 --- !u!114 &84523666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edd1e3da7bf9dd41b3a5f1c8b5a449c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _personalityType: INTP
+  _personalityType: ENFJ
 --- !u!4 &84523667
 Transform:
   m_ObjectHideFlags: 0
