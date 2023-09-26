@@ -1,5 +1,8 @@
-ID,BuffName,Aspect,ModifierA,ModifierB,Duration
-1,Happy,1,1,1,3
-2,Awkward,2,2,1,3
-3,Motivated,3,3,2,2
-4,Sad,4,4,2,2
+ID,BuffName,Aspect,ModifierA (INFP),ModifierB (ESTJ),Duration
+1,Social,1,1,4,3
+2,Theoretical,2,3,-2,3
+3,Small Talk,3,2,-2,3
+4,Structure,4,-3,4,3
+5,Curious,2,2,-1,3
+6,Practical,2,-2,3,3
+7,Awkward,1,2,-1,3
