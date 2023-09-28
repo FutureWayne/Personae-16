@@ -81,6 +81,12 @@ namespace UI
 
             foreach (var node in _playerConversant.GetChoiceNodes())
             {
+                // Check node condition
+                if (!_playerConversant.IsNodeStatusRequirementMet(node))
+                {
+                    continue;
+                }
+                
                 var choiceButton = Instantiate(choicePrefab, choiceRoot);
                 var textMeshProUGUI = choiceButton.GetComponentInChildren<TextMeshProUGUI>();
                 textMeshProUGUI.text = node.GetText();

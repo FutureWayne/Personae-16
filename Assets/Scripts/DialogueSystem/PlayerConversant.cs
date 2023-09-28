@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Buff;
+using Player;
 using UnityEngine;
 
 namespace DialogueSystem
@@ -18,12 +19,16 @@ namespace DialogueSystem
         
         private bool _isChoosing;
         
+        private PlayerStatus _playerStatus;
+        
         public event Action OnConversationUpdated; 
         
         IEnumerator Start()
         {
             yield return new WaitForSeconds(1);
             StartDialogue(newDialogue);
+            
+            _playerStatus = GetComponent<PlayerStatus>();
         }
         
         public bool IsActive()
@@ -131,6 +136,24 @@ namespace DialogueSystem
                 var buff = BuffFactory.GetBuffByID(removeBuffID);
                 buff.RemoveBuff(gameObject);
             }
+        }
+        
+        public bool IsNodeStatusRequirementMet(DialogueNode node)
+        {
+            // Only check player choices
+            if (!node.IsPlayerSpeaking())
+            {
+                return true;
+            }
+            
+            var dictStatusReq = node.GetStatusReqDict();
+            if (dictStatusReq is null)
+            {
+                return true;
+            }
+
+            // Use Linq to check if all status requirement is met
+            return dictStatusReq.All(pair => _playerStatus.GetStatus(pair.Key) >= pair.Value);
         }
     }
 }
