@@ -121,7 +121,8 @@ MonoBehaviour:
   text: "Move on, you say? I don\u2019t appreciate being rushed. Solving puzzles
     takes time and patience. If you\u2019re in a hurry, perhaps you should explore
     elsewhere."
-  children: []
+  children:
+  - fd5abd9e-96e0-431d-b454-096621bf2150
   rect:
     serializedVersion: 2
     x: 1517
@@ -388,6 +389,7 @@ MonoBehaviour:
   - {fileID: -1362262947824580657}
   - {fileID: -5985615460049128828}
   - {fileID: 504952919413848970}
+  - {fileID: 7272452831276152719}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &504952919413848970
 MonoBehaviour:
@@ -564,6 +566,29 @@ MonoBehaviour:
     width: 200
     height: 100
   listAddBuffID: 04000000
+  listRemoveBuffID: 
+--- !u!114 &7272452831276152719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: fd5abd9e-96e0-431d-b454-096621bf2150
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1767
+    y: 282
+    width: 200
+    height: 100
+  listAddBuffID: 
   listRemoveBuffID: 
 --- !u!114 &7290243469085267582
 MonoBehaviour:

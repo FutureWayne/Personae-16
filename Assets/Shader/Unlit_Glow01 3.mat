@@ -31,6 +31,6 @@ Material:
     m_Floats:
     - _FresnelPower: 3.22
     m_Colors:
-    - _Color: {r: 1.0940539, g: 5.499061, b: 4.865935, a: 1}
+    - _Color: {r: 2.2888646, g: 1.045801, b: 5.9921575, a: 1}
     - _ScrollDirection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
