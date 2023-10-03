@@ -58,17 +58,14 @@ namespace UI
             }
             
             var isChoosing = _playerConversant.IsChoosing();
-            aiResponseRoot.gameObject.SetActive(!isChoosing);
+            
+            aiResponseText.text = _playerConversant.GetCurrentNodeText();
+            nextButton.gameObject.SetActive(_playerConversant.HasNextNode());
             choiceRoot.gameObject.SetActive(isChoosing);
             
             if (isChoosing)
             {
                 BuildChoiceList();
-            }
-            else
-            {
-                aiResponseText.text = _playerConversant.GetCurrentNodeText();
-                nextButton.gameObject.SetActive(_playerConversant.HasNextNode());
             }
         }
 
