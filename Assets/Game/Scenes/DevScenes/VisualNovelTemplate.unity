@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edd1e3da7bf9dd41b3a5f1c8b5a449c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _personalityType: ENFJ
+  _playerPersonalityType: INTP
+  _crushPersonalityType: ESFJ
 --- !u!4 &84523667
 Transform:
   m_ObjectHideFlags: 0

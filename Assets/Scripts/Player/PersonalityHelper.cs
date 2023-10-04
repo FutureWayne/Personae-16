@@ -5,28 +5,28 @@ namespace Player
 {
     public static class PersonalityHelper
     {
-        private static readonly Dictionary<EPersonalityAspects, List<string>> DictPersonalityType =
-            new Dictionary<EPersonalityAspects, List<string>>()
+        private static readonly Dictionary<EPersonalityTraits, List<string>> DictPersonalityType =
+            new Dictionary<EPersonalityTraits, List<string>>()
             {
-                {EPersonalityAspects.Mind, new List<string>() {"I", "E"}},
-                {EPersonalityAspects.Energy, new List<string>() {"N", "S"}},
-                {EPersonalityAspects.Nature, new List<string>() {"F", "T"}},
-                {EPersonalityAspects.Tactics, new List<string>() {"P", "J"}},
+                {EPersonalityTraits.Mind, new List<string>() {"I", "E"}},
+                {EPersonalityTraits.Energy, new List<string>() {"N", "S"}},
+                {EPersonalityTraits.Nature, new List<string>() {"F", "T"}},
+                {EPersonalityTraits.Tactics, new List<string>() {"P", "J"}},
             };
 
-        public static int GetAspectSideByType(EPersonalityAspects aspect, string type)
+        public static int GetAspectSideByType(EPersonalityTraits trait, string type)
         {
             //Trim the type string by aspect
             
-            var index = (int)aspect;
+            var index = (int)trait;
             var typeTrimmed = type[index].ToString();
             
-            return DictPersonalityType[aspect].IndexOf(typeTrimmed);
+            return DictPersonalityType[trait].IndexOf(typeTrimmed);
         }
         
-        public static ECharacterStatus GetStatusByAspect(EPersonalityAspects aspect)
+        public static ECharacterStatusType GetStatusByAspect(EPersonalityTraits trait)
         {
-            return (ECharacterStatus) aspect;
+            return (ECharacterStatusType) trait;
         }
     }
 }

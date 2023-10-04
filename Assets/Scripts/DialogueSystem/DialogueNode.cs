@@ -2,9 +2,17 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DialogueSystem
 {
+    [Serializable]
+    public class StatusRequirement
+    {
+        public ECharacterStatusType statusType;
+        public int requirementValue;
+    }
+
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
@@ -25,29 +33,20 @@ namespace DialogueSystem
         List<string> children = new();
         
         [Header("Status Requirement")]
-        [SerializeField] 
-        private int status1Req;
+    
         [SerializeField]
-        private int status2Req;
-        [SerializeField]
-        private int status3Req;
-        [SerializeField]
-        private int status4Req;
+        private List<StatusRequirement> statusRequirementsList = new();
         
-        private Dictionary<ECharacterStatus, int> _dictStatusReq;
-
-
+        private Dictionary<ECharacterStatusType, int> _dictStatusReq;
+        
         private void OnEnable()
         {
-            _dictStatusReq = new Dictionary<ECharacterStatus, int>
+            _dictStatusReq = new Dictionary<ECharacterStatusType, int>();
+            foreach (var statusReq in statusRequirementsList)
             {
-                [ECharacterStatus.Energy] = status1Req,
-                [ECharacterStatus.Stress] = status2Req,
-                [ECharacterStatus.Motivation] = status3Req,
-                [ECharacterStatus.Confidence] = status4Req
-            };
+                _dictStatusReq[statusReq.statusType] = statusReq.requirementValue;
+            }
         }
-
 
         public Rect GetRect()
         {
@@ -79,7 +78,7 @@ namespace DialogueSystem
             return listRemoveBuffID;
         }
         
-        public Dictionary<ECharacterStatus, int> GetStatusReqDict()
+        public Dictionary<ECharacterStatusType, int> GetStatusReqDict()
         {
             return _dictStatusReq;
         }

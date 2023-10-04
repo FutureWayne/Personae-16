@@ -8,11 +8,11 @@ namespace Buff
     {
         public int id;
         public string buffName;
-        public EPersonalityAspects aspect;
-        public int modifierA;
-        public int modifierB;
+        public EPersonalityTraits trait;
         public int duration;
         public int personaModifier;
+        public int baseFavorabilityModifier;
+        
         
         public void AddBuff(GameObject target)
         {
@@ -26,7 +26,7 @@ namespace Buff
         
         public override string ToString()
         {
-            return $"{id} - {buffName} - {aspect} - {modifierA} - {modifierB} - {duration} - {personaModifier}";
+            return $"{id} - {buffName} - {trait} - {duration} - {personaModifier}";
         }
     }
 }
