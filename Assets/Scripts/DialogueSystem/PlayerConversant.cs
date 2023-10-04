@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Buff;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DialogueSystem
 {
@@ -17,6 +19,9 @@ namespace DialogueSystem
         private DialogueNode _currentNode;
         
         private bool _isChoosing;
+
+        public GameObject dialogueBox;
+        public GameObject personalityResults;
         
         public event Action OnConversationUpdated; 
         
@@ -62,6 +67,9 @@ namespace DialogueSystem
         {
             if (_currentNode is null || !HasNextNode())
             {
+                TriggerExitAction();
+                dialogueBox.SetActive(false);
+                personalityResults.SetActive(true);
                 return;
             }
             
@@ -123,6 +131,9 @@ namespace DialogueSystem
             foreach (var addBuffID in _currentNode.GetAddBuffIDList())
             {
                 var buff = BuffFactory.GetBuffByID(addBuffID);
+                //Debug.Log(buff);
+                //Debug.Log(addBuffID.ToString());
+
                 buff.AddBuff(gameObject);
             }
             

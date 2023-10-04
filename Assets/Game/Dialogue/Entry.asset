@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8174175994799845550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 0d688638-f1b5-47a2-a3ec-2e99b70b2de7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I rely on facts over intuition to make decisions.
+  children:
+  - 7a286320-d026-45f5-baa4-af4d92931498
+  - c0fc8588-5687-4941-9cb0-9884ba75181e
+  rect:
+    serializedVersion: 2
+    x: 1455
+    y: 229.99997
+    width: 200
+    height: 100
+  listAddBuffID: 
+  listRemoveBuffID: 
 --- !u!114 &-7867528667946080313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,15 +38,17 @@ MonoBehaviour:
   m_Name: 9e4cce7b-da57-4b93-9bd2-a63187cda9ac
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Fine, and you?
-  children: []
+  text: I tend to think about big picture stuff rather than diving deep into details.
+  children:
+  - 5d7a2cee-eae1-4254-8703-aab5e159353b
+  - d2e198db-0681-4ecd-a660-380029675480
   rect:
     serializedVersion: 2
-    x: 849
-    y: 196.99997
+    x: 831
+    y: 223.99997
     width: 200
     height: 100
-  listAddBuffID: 01000000
+  listAddBuffID: 
   listRemoveBuffID: 
 --- !u!114 &-4327785063268366418
 MonoBehaviour:
@@ -36,61 +63,14 @@ MonoBehaviour:
   m_Name: 255e8737-71e7-40a2-898b-7e14c723c0b9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 11
+  text: I would rather spend time alone than with other people.
   children:
   - f95190fa-e2e8-420b-bef2-9546732383df
   - 1c516b93-5941-4017-a3b0-fb62c543ff34
   rect:
     serializedVersion: 2
-    x: 218
-    y: 85
-    width: 200
-    height: 100
-  listAddBuffID: 01000000
-  listRemoveBuffID: 
---- !u!114 &-2963227455700301502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
-  m_Name: 39f0081e-e3ae-4988-9458-f3b6c58e804e
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 22 out
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 490
-    y: 330
-    width: 200
-    height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
---- !u!114 &-2930877663722620881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
-  m_Name: 0c3467b1-606c-45c3-8860-9d84dff5f2fb
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 22
-  children:
-  - 39f0081e-e3ae-4988-9458-f3b6c58e804e
-  rect:
-    serializedVersion: 2
-    x: 240
-    y: 330
+    x: 252
+    y: 219
     width: 200
     height: 100
   listAddBuffID: 
@@ -111,12 +91,40 @@ MonoBehaviour:
   - {fileID: 2948526004747985423}
   - {fileID: 862554352477242061}
   - {fileID: 1268279467237416229}
-  - {fileID: 4549307245599120813}
   - {fileID: -7867528667946080313}
-  - {fileID: -2930877663722620881}
   - {fileID: -4327785063268366418}
-  - {fileID: -2963227455700301502}
+  - {fileID: 3960293836863809029}
+  - {fileID: 2334982010298475149}
+  - {fileID: -8174175994799845550}
+  - {fileID: 1336351800636617386}
+  - {fileID: 2015058418934392673}
+  - {fileID: 2914340335629205275}
+  - {fileID: 566427485607171094}
+  - {fileID: 6030372514886572830}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &566427485607171094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 1b2b5961-8065-4eb0-ab81-43e53f7aad30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2378
+    y: 139.99997
+    width: 200
+    height: 100
+  listAddBuffID: ef030000
+  listRemoveBuffID: 
 --- !u!114 &862554352477242061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,16 +138,16 @@ MonoBehaviour:
   m_Name: f95190fa-e2e8-420b-bef2-9546732383df
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Hi
+  text: Yes
   children:
-  - 54d63be4-4e96-4c6a-b2f2-81047b2824b8
+  - 9e4cce7b-da57-4b93-9bd2-a63187cda9ac
   rect:
     serializedVersion: 2
-    x: 494
-    y: 84.00001
+    x: 511
+    y: 136
     width: 200
     height: 100
-  listAddBuffID: 01000000
+  listAddBuffID: e9030000
   listRemoveBuffID: 
 --- !u!114 &1268279467237416229
 MonoBehaviour:
@@ -154,16 +162,113 @@ MonoBehaviour:
   m_Name: 1c516b93-5941-4017-a3b0-fb62c543ff34
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: How are you?
+  text: No
   children:
   - 9e4cce7b-da57-4b93-9bd2-a63187cda9ac
   rect:
     serializedVersion: 2
-    x: 492
-    y: 215.99997
+    x: 508
+    y: 334.99997
     width: 200
     height: 100
-  listAddBuffID: 01000000
+  listAddBuffID: ea030000
+  listRemoveBuffID: 
+--- !u!114 &1336351800636617386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7a286320-d026-45f5-baa4-af4d92931498
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes
+  children:
+  - 91a2b636-16ef-4883-b89b-7e88224ed81f
+  rect:
+    serializedVersion: 2
+    x: 1740
+    y: 132.99997
+    width: 200
+    height: 100
+  listAddBuffID: ed030000
+  listRemoveBuffID: 
+--- !u!114 &2015058418934392673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c0fc8588-5687-4941-9cb0-9884ba75181e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
+  children:
+  - 91a2b636-16ef-4883-b89b-7e88224ed81f
+  rect:
+    serializedVersion: 2
+    x: 1735
+    y: 308.99997
+    width: 200
+    height: 100
+  listAddBuffID: ee030000
+  listRemoveBuffID: 
+--- !u!114 &2334982010298475149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d2e198db-0681-4ecd-a660-380029675480
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
+  children:
+  - 0d688638-f1b5-47a2-a3ec-2e99b70b2de7
+  rect:
+    serializedVersion: 2
+    x: 1161
+    y: 324.99997
+    width: 200
+    height: 100
+  listAddBuffID: ec030000
+  listRemoveBuffID: 
+--- !u!114 &2914340335629205275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 91a2b636-16ef-4883-b89b-7e88224ed81f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I would rather plan out my future than go with the flow.
+  children:
+  - 1b2b5961-8065-4eb0-ab81-43e53f7aad30
+  - b4fb56a5-417d-43cf-96a8-afdb9c7a7936
+  rect:
+    serializedVersion: 2
+    x: 2034
+    y: 217.99997
+    width: 200
+    height: 100
+  listAddBuffID: 
   listRemoveBuffID: 
 --- !u!114 &2948526004747985423
 MonoBehaviour:
@@ -178,18 +283,19 @@ MonoBehaviour:
   m_Name: 479928b4-c339-441f-b353-c406cd4340b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hello
+  text: Are you ready to have your personality test? Answer these 4 simple questions
+    to get started.
   children:
   - 255e8737-71e7-40a2-898b-7e14c723c0b9
   rect:
     serializedVersion: 2
-    x: -7
-    y: 124
+    x: 2
+    y: 221
     width: 200
     height: 100
-  listAddBuffID: 01000000
+  listAddBuffID: 
   listRemoveBuffID: 
---- !u!114 &4549307245599120813
+--- !u!114 &3960293836863809029
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,16 +305,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
-  m_Name: 54d63be4-4e96-4c6a-b2f2-81047b2824b8
+  m_Name: 5d7a2cee-eae1-4254-8703-aab5e159353b
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Hi back
+  isPlayerSpeaking: 1
+  text: Yes
+  children:
+  - 0d688638-f1b5-47a2-a3ec-2e99b70b2de7
+  rect:
+    serializedVersion: 2
+    x: 1156
+    y: 129.99997
+    width: 200
+    height: 100
+  listAddBuffID: eb030000
+  listRemoveBuffID: 
+--- !u!114 &6030372514886572830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: b4fb56a5-417d-43cf-96a8-afdb9c7a7936
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
   children: []
   rect:
     serializedVersion: 2
-    x: 837
-    y: 80
+    x: 2370
+    y: 314.99997
     width: 200
     height: 100
-  listAddBuffID: 01000000
+  listAddBuffID: f0030000
   listRemoveBuffID: 

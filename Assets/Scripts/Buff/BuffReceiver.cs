@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Player;
 using DialogueSystem;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 namespace Buff
 {
@@ -12,6 +14,8 @@ namespace Buff
         private PlayerStatus _playerStatus;
         private string _playerPersonalityType;
         private PlayerConversant _playerConversant;
+        public string result = "";
+        public TMP_Text personalityResults;
         
         private void Start()
         {            
@@ -24,6 +28,19 @@ namespace Buff
         
         public void AddBuff(BuffData buffData)
         {
+            //Debug.Log(buffData.id);
+            if (buffData.id > 1000)
+            {
+                // Modify the personality type
+                
+                result += buffData.buffName;
+                _playerStatus.PersonalityType = result;
+                //Debug.Log(_playerStatus.PersonalityType);
+                personalityResults.SetText("It looks like your personality type is " + result);
+                return;
+            }
+
+
             if (_dictBuffDuration.ContainsKey(buffData))
             {
                 _dictBuffDuration[buffData].Add(buffData.duration);
