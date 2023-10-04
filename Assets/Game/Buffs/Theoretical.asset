@@ -18,3 +18,4 @@ MonoBehaviour:
   modifierA: 3
   modifierB: -2
   duration: 3
+  personaModifier: -2
