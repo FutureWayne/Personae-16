@@ -301,8 +301,7 @@ MonoBehaviour:
   m_Name: b3fca0a1-0f06-4bb5-8a40-cd6371c29f59
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey Seb, it's Christmas Eve. The guests are expecting something festive.
-    Play "Jingle Bells" for them.
+  text: 'Hey Seb, it''s Christmas Eve. The guests are expecting something festive. '
   speakerName: Boss
   speakerType: 1
   background: {fileID: 0}
@@ -310,8 +309,8 @@ MonoBehaviour:
   listRemoveBuffID: 
   rect:
     serializedVersion: 2
-    x: 92
-    y: 645
+    x: 55
+    y: 658
     width: 200
     height: 100
   children:
@@ -446,7 +445,7 @@ MonoBehaviour:
   m_Name: 560be7ba-d7cb-49de-8080-dfd549f3af3e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: "In a moment of quiet rebellion, Seb transitions from \u201CJingle Bells\u201D
+  text: "In a moment of quiet rebellion, Seb transitions from \u201CDeck the halls\u201D
     into a piece of his own, a fluid, captivating jazz melody that fills the room
     with a different energy."
   speakerName: 
@@ -505,7 +504,7 @@ MonoBehaviour:
   m_Name: 23576e18-86b2-48fc-9271-68ee3475d00a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: "Seb, with a slight sigh, begins to play \u201CJingle Bells\u201D as instructed.
+  text: "Seb, with a slight sigh, begins to play \u201C Deck the halls\u201D as instructed.
     The notes, while familiar and cheerful, feel hollow, each one echoing the compromise
     he\u2019s making"
   speakerName: 
@@ -965,7 +964,7 @@ MonoBehaviour:
   m_Name: 58c2c704-3631-4960-9411-e94b864d1adc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Play Jingle Bells
+  text: Play "Deck the halls"
   speakerName: 
   speakerType: 2
   background: {fileID: 0}
@@ -973,8 +972,8 @@ MonoBehaviour:
   listRemoveBuffID: 
   rect:
     serializedVersion: 2
-    x: 452
-    y: 716
+    x: 454
+    y: 721
     width: 200
     height: 100
   children:
