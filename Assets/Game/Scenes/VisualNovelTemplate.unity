@@ -357,6 +357,7 @@ MonoBehaviour:
   listDialogues:
   - {fileID: 11400000, guid: e997210b53c2bea4aa230e598ac1454c, type: 2}
   - {fileID: 11400000, guid: 921f42b6c9b779a4ea10ffbe861d7f19, type: 2}
+  - {fileID: 11400000, guid: 297e0d30db599f746944739edb3fdb9a, type: 2}
   dialogueCanvas: {fileID: 6178146352547925356}
   StartScreenCanvas: {fileID: 1403861048}
 --- !u!4 &699107083
