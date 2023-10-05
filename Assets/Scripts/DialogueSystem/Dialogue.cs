@@ -81,7 +81,6 @@ namespace DialogueSystem
             if (parent != null)
             {
                 parent.AddChild(newNode.name);
-                newNode.SetPlayerSpeaking(!parent.IsPlayerSpeaking());
                 newNode.SetPosition(parent.GetRect().position + newNodeOffset);
             }
 
