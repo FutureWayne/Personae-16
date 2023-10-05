@@ -95,7 +95,7 @@ namespace UI
             
             aiResponseText.text = _playerConversant.GetCurrentNodeText();
             speakerNameText.text = _playerConversant.GetCurrentSpeakerName();
-            nextButton.gameObject.SetActive(_playerConversant.HasNextNode() && !isChoosing);
+            nextButton.gameObject.SetActive(!isChoosing);
             choiceRoot.gameObject.SetActive(isChoosing);
             
             if (isChoosing)
