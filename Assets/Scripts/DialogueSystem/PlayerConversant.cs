@@ -62,6 +62,11 @@ namespace DialogueSystem
         {
             return _currentNode is null ? "" : _currentNode.GetText();
         }
+        
+        public string GetCurrentSpeakerName()
+        {
+            return _currentNode is null ? "" : _currentNode.GetSpeakerName();
+        }
 
         public void MoveToNextNode()
         {
@@ -153,7 +158,7 @@ namespace DialogueSystem
             }
 
             // Use Linq to check if all status requirement is met
-            return dictStatusReq.All(pair => _playerStatus.GetStatus(pair.Key) >= pair.Value);
+            return dictStatusReq.All(pair => _playerStatus.GetStatusByType(pair.Key) >= pair.Value);
         }
     }
 }
