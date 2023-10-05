@@ -2,25 +2,19 @@ using System.Collections.Generic;
 using Player;
 using DialogueSystem;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 namespace Buff
 {
     public class BuffReceiver : MonoBehaviour
     {
-        private Dictionary<BuffData, List<int>> _dictBuffDuration = new();
+        private readonly Dictionary<BuffData, List<int>> _dictBuffDuration = new();
         
         private PlayerStatus _playerStatus;
-        private string _playerPersonalityType;
         private PlayerConversant _playerConversant;
-        public string result = "";
-        public TMP_Text personalityResults;
         
         private void Start()
         {            
             _playerStatus = GetComponent<PlayerStatus>();
-            _playerPersonalityType = _playerStatus.PersonalityType;
             
             _playerConversant = GetComponent<PlayerConversant>();
             _playerConversant.OnConversationUpdated += BuffEffect;
@@ -28,27 +22,16 @@ namespace Buff
         
         public void AddBuff(BuffData buffData)
         {
-            //Debug.Log(buffData.id);
-            if (buffData.id > 1000)
+            if (_dictBuffDuration.TryGetValue(buffData, out var value))
             {
-                // Modify the personality type
-                
-                result += buffData.buffName;
-                _playerStatus.PersonalityType = result;
-                //Debug.Log(_playerStatus.PersonalityType);
-                personalityResults.SetText("It looks like your personality type is " + result);
-                return;
-            }
-
-
-            if (_dictBuffDuration.ContainsKey(buffData))
-            {
-                _dictBuffDuration[buffData].Add(buffData.duration);
+                value.Add(buffData.duration);
             }
             else
             {
                 _dictBuffDuration.Add(buffData, new List<int>() {buffData.duration});
             }
+            
+            _playerStatus.OnUpdateBuffEffect(buffData.trait, buffData.personaModifier, buffData.baseFavorabilityModifier);
         }
 
         public void RemoveBuff(BuffData buffData)
@@ -61,9 +44,8 @@ namespace Buff
 
         private void BuffEffect()
         {
-            var debugstr = "";
+            var debugStr = "";
             
-            var listBuffDataToRemove = new List<BuffData>();
             foreach (var buffKeyValuePair in _dictBuffDuration)
             {
                 var buffData = buffKeyValuePair.Key;
@@ -79,26 +61,14 @@ namespace Buff
 
                     durations[i]--;
 
-                    var aspect = buffData.aspect;
-                    var modifierA = buffData.modifierA;
-                    var modifierB = buffData.modifierB;
-
-                    var playerSideOfAspect = PersonalityHelper.GetAspectSideByType(aspect, _playerPersonalityType);
-                    var inEffectModifier = playerSideOfAspect == 0 ? modifierA : modifierB;
-                    var affectedStatus = PersonalityHelper.GetStatusByAspect(aspect);
-                    _playerStatus.SetStatus(affectedStatus, _playerStatus.GetStatus(affectedStatus) + inEffectModifier);
+                    var trait = buffData.trait;
 
                     var durationTime = durations[i];
-                    debugstr +=
-                        $"{buffData.buffName} - {aspect} - {affectedStatus} - {inEffectModifier} - {durationTime}\n";
+                    debugStr +=
+                        $"{buffData.buffName} - {trait} - {durationTime}\n";
                 }
                 
-                Debug.LogWarning(debugstr);
-            }
-
-            foreach (var buffData in listBuffDataToRemove)
-            {
-                _dictBuffDuration.Remove(buffData);
+                Debug.LogWarning(debugStr);
             }
         }
     }

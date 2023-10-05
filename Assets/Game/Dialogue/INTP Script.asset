@@ -15,6 +15,15 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Alex, the INTP character, is engrossed in solving a complex puzzle when the
     player approaches.
+  speakerName: NPC
+  listAddBuffID: 
+  listRemoveBuffID: 
+  rect:
+    serializedVersion: 2
+    x: 39
+    y: 367
+    width: 200
+    height: 100
   children:
   - 493098ae-178b-40df-bab3-3e9ac7ea7c1f
   - b778617f-9711-4ee9-a909-a250ee4abcfc
@@ -22,14 +31,7 @@ MonoBehaviour:
   - 2f442a09-447a-40e7-841e-a5c8c2a7d0cf
   - 1deb45a6-b40c-413e-a805-b164949862a1
   - 3db43ad8-d58e-4cbe-a745-f4d380353e2e
-  rect:
-    serializedVersion: 2
-    x: 39
-    y: 367
-    width: 200
-    height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  statusRequirementsList: []
 --- !u!114 &-7908205307440567054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,18 +45,19 @@ MonoBehaviour:
   m_Name: 2f442a09-447a-40e7-841e-a5c8c2a7d0cf
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: "Hey, I can see you\u2019re really into that puzzle. Mind if I watch for
-    a bit?"
-  children:
-  - 887a9076-0e39-41ea-9fdc-90072cfc02f1
-  rect:
-    serializedVersion: 2
-    x: 423
-    y: 188
-    width: 200
-    height: 100
+  text: HIIIIIIIIIIIIIIII
+  speakerName: ccccc
   listAddBuffID: 01000000
   listRemoveBuffID: 
+  rect:
+    serializedVersion: 2
+    x: 471
+    y: 182
+    width: 200
+    height: 100
+  children:
+  - 887a9076-0e39-41ea-9fdc-90072cfc02f1
+  statusRequirementsList: []
 --- !u!114 &-5985615460049128828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,15 +74,17 @@ MonoBehaviour:
   text: "Besides puzzles, I have a keen interest in theoretical physics, programming,
     and delving into the mysteries of the universe. There\u2019s so much to explore
     in these areas."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1520
     y: 607
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &-4224766699741777332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,15 +101,17 @@ MonoBehaviour:
   text: "Well, it\u2019s an interesting one. It involves deciphering a complex sequence
     of patterns and numbers to unlock its hidden message. It\u2019s a bit of a diversion
     from the usual routine, you know."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1519
     y: 164
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &-4182328654659019293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,16 +128,17 @@ MonoBehaviour:
   text: "Move on, you say? I don\u2019t appreciate being rushed. Solving puzzles
     takes time and patience. If you\u2019re in a hurry, perhaps you should explore
     elsewhere."
-  children:
-  - fd5abd9e-96e0-431d-b454-096621bf2150
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1517
     y: 282
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &-3943018158639785483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,16 +153,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "What\u2019s the ultimate goal of this puzzle? It looks challenging."
-  children:
-  - c74bbe56-4f6f-4c8c-a0f7-5f93c4d3ea78
+  speakerName: 
+  listAddBuffID: 05000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1149
     y: 163
     width: 200
     height: 100
-  listAddBuffID: 05000000
-  listRemoveBuffID: 
+  children:
+  - c74bbe56-4f6f-4c8c-a0f7-5f93c4d3ea78
+  statusRequirementsList: []
 --- !u!114 &-1721670017254191604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,16 +179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "Hi, I\u2019m [Player\u2019s Name]. What\u2019s that puzzle all about?"
-  children:
-  - 4a120955-3473-4bf8-b293-514cd343a072
+  speakerName: ddddd
+  listAddBuffID: 05000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 403
     y: 416
     width: 200
     height: 100
-  listAddBuffID: 05000000
-  listRemoveBuffID: 
+  children:
+  - 4a120955-3473-4bf8-b293-514cd343a072
+  statusRequirementsList: []
 --- !u!114 &-1606633484695577088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,16 +206,18 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: Oh wow! Puzzles are fascinating. Have you ever thought about the philosophy
     behind problem-solving?
-  children:
-  - 3b51cbfd-7197-4ab3-ac73-f71c333054ea
+  speakerName: 
+  listAddBuffID: 02000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1143
     y: 372
     width: 200
     height: 100
-  listAddBuffID: 02000000
-  listRemoveBuffID: 
+  children:
+  - 3b51cbfd-7197-4ab3-ac73-f71c333054ea
+  statusRequirementsList: []
 --- !u!114 &-1526392526434645721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,17 +233,19 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: "Hmm, occasionally, when I need a change of scenery. It\u2019s quiet here,
     which suits my preferences."
-  children:
-  - 0fe35870-22aa-45e0-a150-cd1e2a4b5b78
-  - 850810ca-e0ba-4ba7-b98a-f759d3863c7c
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 754
     y: 645
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children:
+  - 0fe35870-22aa-45e0-a150-cd1e2a4b5b78
+  - 850810ca-e0ba-4ba7-b98a-f759d3863c7c
+  statusRequirementsList: []
 --- !u!114 &-1392891775505299293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,15 +260,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "Hi, I\u2019m [Player\u2019s Name]. What\u2019s that puzzle all about?"
-  children: []
+  speakerName: 
+  listAddBuffID: 05000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 388
     y: 254
     width: 200
     height: 100
-  listAddBuffID: 05000000
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &-1362262947824580657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,15 +287,17 @@ MonoBehaviour:
   text: "Besides puzzles, I have a keen interest in theoretical physics, programming,
     and delving into the mysteries of the universe. There\u2019s so much to explore
     in these areas."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1532
     y: 473
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &-943025943513022758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,16 +312,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "Hey, my name is [Player\u2019s Name]. Do you come here often?"
-  children:
-  - 39e7b271-2924-42af-8eec-7589f2cba7d4
+  speakerName: eeeee
+  listAddBuffID: 03000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 414
     y: 551
     width: 200
     height: 100
-  listAddBuffID: 03000000
-  listRemoveBuffID: 
+  children:
+  - 39e7b271-2924-42af-8eec-7589f2cba7d4
+  statusRequirementsList: []
 --- !u!114 &-244350694790467653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,16 +339,18 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: "Oh yeah, it definitely looks challenging. I\u2019m pretty good at puzzles
     too. Want to see if we can solve it together?"
-  children:
-  - cc4c8324-c2ec-4107-b1f4-ce55d92bf89c
+  speakerName: 
+  listAddBuffID: 0100000005000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1148
     y: 25
     width: 200
     height: 100
-  listAddBuffID: 0100000005000000
-  listRemoveBuffID: 
+  children:
+  - cc4c8324-c2ec-4107-b1f4-ce55d92bf89c
+  statusRequirementsList: []
 --- !u!114 &-159005852007539447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,17 +368,19 @@ MonoBehaviour:
     one, I suppose. It involves deciphering a complex sequence of patterns and numbers
     to unlock its hidden message. It\u2019s a bit of a diversion from the usual routine,
     you know."
-  children:
-  - d6519493-63bc-4ff1-91e9-12b1dcaa61e2
-  - 03683418-c8aa-41dd-a061-780cf6f590c7
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 752
     y: 411
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children:
+  - d6519493-63bc-4ff1-91e9-12b1dcaa61e2
+  - 03683418-c8aa-41dd-a061-780cf6f590c7
+  statusRequirementsList: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +415,6 @@ MonoBehaviour:
   - {fileID: -1362262947824580657}
   - {fileID: -5985615460049128828}
   - {fileID: 504952919413848970}
-  - {fileID: 7272452831276152719}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &504952919413848970
 MonoBehaviour:
@@ -407,15 +432,17 @@ MonoBehaviour:
   text: "Quantum physics and cooking recipes? I must admit, that\u2019s quite a leap.
     While it\u2019s imaginative, there doesn\u2019t seem to be a logical connection
     between the two."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1532
     y: 732
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &1017278050723099893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,18 +459,20 @@ MonoBehaviour:
   text: "Oh, not at all. Please, feel free to observe. This puzzle is quite intricate,
     you know. I\u2019ve been working on it for a while now, trying to decipher its
     logic."
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
+  rect:
+    serializedVersion: 2
+    x: 758
+    y: 196
+    width: 200
+    height: 100
   children:
   - f1df0033-4cab-4142-b9b0-95d923fe3c61
   - 527f49dd-3922-4373-861e-87b995fb53ee
   - 783037cb-c5f7-4297-b3a1-4d98fea6ec7d
-  rect:
-    serializedVersion: 2
-    x: 762
-    y: 186
-    width: 200
-    height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  statusRequirementsList: []
 --- !u!114 &1721031276551752427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,15 +490,17 @@ MonoBehaviour:
     a topic I\u2019ve delved into extensively. It\u2019s not just about finding solutions;
     it\u2019s about understanding the very nature of problems themselves. Let\u2019s
     explore this further."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1534
     y: 379
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &2908953496784887681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,15 +516,17 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: "Hey, I can see you\u2019re really into that puzzle. Mind if I watch for
     a bit?"
-  children: []
+  speakerName: 
+  listAddBuffID: 01000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 387
     y: 114
     width: 200
     height: 100
-  listAddBuffID: 01000000
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &3158681790179423598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,15 +543,17 @@ MonoBehaviour:
   text: "Collaboration, you say? I appreciate your enthusiasm! Let\u2019s give it
     a try. Two heads are often better than one, especially when tackling intricate
     puzzles like this."
-  children: []
+  speakerName: 
+  listAddBuffID: 
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1526
     y: 19
     width: 200
     height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &4977788133148833449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,15 +568,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "Hey, my name is [Player\u2019s Name]. Do you come here often?"
-  children: []
+  speakerName: 
+  listAddBuffID: 03000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 379
     y: 413
     width: 200
     height: 100
-  listAddBuffID: 03000000
-  listRemoveBuffID: 
+  children: []
+  statusRequirementsList: []
 --- !u!114 &5985069046367322574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,39 +594,18 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: "Well, as you\u2019ve already spent a lot of time on it, perhaps it\u2019s
     best to put this away and think about it another time."
-  children:
-  - 0bbbd5e9-2aa5-458f-9c52-7854fb664c5c
+  speakerName: 
+  listAddBuffID: 04000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1146
     y: 278
     width: 200
     height: 100
-  listAddBuffID: 04000000
-  listRemoveBuffID: 
---- !u!114 &7272452831276152719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
-  m_Name: fd5abd9e-96e0-431d-b454-096621bf2150
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1767
-    y: 282
-    width: 200
-    height: 100
-  listAddBuffID: 
-  listRemoveBuffID: 
+  children:
+  - 0bbbd5e9-2aa5-458f-9c52-7854fb664c5c
+  statusRequirementsList: []
 --- !u!114 &7290243469085267582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,16 +620,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: "That\u2019s great! Aside from puzzles, what else are you interested in?"
-  children:
-  - 14db88a7-ae79-4397-bc67-1001231e47f9
+  speakerName: 
+  listAddBuffID: 07000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1140
     y: 466
     width: 200
     height: 100
-  listAddBuffID: 07000000
-  listRemoveBuffID: 
+  children:
+  - 14db88a7-ae79-4397-bc67-1001231e47f9
+  statusRequirementsList: []
 --- !u!114 &8464400874520611970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,16 +647,18 @@ MonoBehaviour:
   isPlayerSpeaking: 1
   text: "That\u2019s understandable! Aside from puzzles, what else are you interested
     in?"
-  children:
-  - 0b4aa984-7f2b-48e2-8d0e-8311052bcb67
+  speakerName: 
+  listAddBuffID: 05000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1134
     y: 610
     width: 200
     height: 100
-  listAddBuffID: 05000000
-  listRemoveBuffID: 
+  children:
+  - 0b4aa984-7f2b-48e2-8d0e-8311052bcb67
+  statusRequirementsList: []
 --- !u!114 &9205763085377336121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,13 +675,15 @@ MonoBehaviour:
   text: "Good for you! Well, I\u2019m currently reading a book on quantum physics
     as part of my assignment. Have you ever thought about combining quantum physics
     with cooking recipes? It could be revolutionary!"
-  children:
-  - 6053d883-06af-4474-9578-cec9902630ad
+  speakerName: 
+  listAddBuffID: 06000000
+  listRemoveBuffID: 
   rect:
     serializedVersion: 2
     x: 1128
     y: 739
     width: 200
     height: 100
-  listAddBuffID: 06000000
-  listRemoveBuffID: 
+  children:
+  - 6053d883-06af-4474-9578-cec9902630ad
+  statusRequirementsList: []

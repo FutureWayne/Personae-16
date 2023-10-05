@@ -3,9 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Buff;
-using TMPro;
+using Player;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DialogueSystem
 {
@@ -19,9 +18,8 @@ namespace DialogueSystem
         private DialogueNode _currentNode;
         
         private bool _isChoosing;
-
-        public GameObject dialogueBox;
-        public GameObject personalityResults;
+        
+        private PlayerStatus _playerStatus;
         
         public event Action OnConversationUpdated; 
         
@@ -29,6 +27,8 @@ namespace DialogueSystem
         {
             yield return new WaitForSeconds(1);
             StartDialogue(newDialogue);
+            
+            _playerStatus = GetComponent<PlayerStatus>();
         }
         
         public bool IsActive()
@@ -62,14 +62,16 @@ namespace DialogueSystem
         {
             return _currentNode is null ? "" : _currentNode.GetText();
         }
+        
+        public string GetCurrentSpeakerName()
+        {
+            return _currentNode is null ? "" : _currentNode.GetSpeakerName();
+        }
 
         public void MoveToNextNode()
         {
             if (_currentNode is null || !HasNextNode())
             {
-                TriggerExitAction();
-                dialogueBox.SetActive(false);
-                personalityResults.SetActive(true);
                 return;
             }
             
@@ -131,9 +133,6 @@ namespace DialogueSystem
             foreach (var addBuffID in _currentNode.GetAddBuffIDList())
             {
                 var buff = BuffFactory.GetBuffByID(addBuffID);
-                //Debug.Log(buff);
-                //Debug.Log(addBuffID.ToString());
-
                 buff.AddBuff(gameObject);
             }
             
@@ -142,6 +141,24 @@ namespace DialogueSystem
                 var buff = BuffFactory.GetBuffByID(removeBuffID);
                 buff.RemoveBuff(gameObject);
             }
+        }
+        
+        public bool IsNodeStatusRequirementMet(DialogueNode node)
+        {
+            // Only check player choices
+            if (!node.IsPlayerSpeaking())
+            {
+                return true;
+            }
+            
+            var dictStatusReq = node.GetStatusReqDict();
+            if (dictStatusReq is null)
+            {
+                return true;
+            }
+
+            // Use Linq to check if all status requirement is met
+            return dictStatusReq.All(pair => _playerStatus.GetStatusByType(pair.Key) >= pair.Value);
         }
     }
 }

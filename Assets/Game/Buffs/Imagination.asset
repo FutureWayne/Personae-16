@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64af18f3a112bfe46a02d8c996003e83, type: 3}
-  m_Name: Happy
+  m_Name: Imagination
   m_EditorClassIdentifier: 
-  id: 1
-  buffName: Happy
-  aspect: 0
-  modifierA: 1
-  modifierB: 1
-  duration: 3
+  id: 4
+  buffName: Imagination
+  trait: 1
+  duration: 1
+  personaModifier: -3
+  baseFavorabilityModifier: 0

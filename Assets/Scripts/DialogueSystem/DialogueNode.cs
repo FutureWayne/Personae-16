@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -6,21 +6,50 @@ using UnityEngine.Serialization;
 
 namespace DialogueSystem
 {
+    [Serializable]
+    public class StatusRequirement
+    {
+        public ECharacterStatusType statusType;
+        public int requirementValue;
+    }
+
     public class DialogueNode : ScriptableObject
     {
+        [Header("Dialogue")]
         [SerializeField]
         private bool isPlayerSpeaking;
         [SerializeField]
         string text;
         [SerializeField]
-        List<string> children = new();
-        [SerializeField]
-        Rect rect = new Rect(0, 0, 200, 100);
+        string speakerName;
         
+        [Header("Buff Effect")]
         [SerializeField]
         List<int> listAddBuffID;
         [SerializeField]
         List<int> listRemoveBuffID;
+                
+        [SerializeField][HideInInspector]
+        Rect rect = new Rect(0, 0, 200, 100);
+        
+        [SerializeField][HideInInspector]
+        List<string> children = new();
+        
+        [Header("Status Requirement")]
+    
+        [SerializeField]
+        private List<StatusRequirement> statusRequirementsList = new();
+        
+        private Dictionary<ECharacterStatusType, int> _dictStatusReq;
+        
+        private void OnEnable()
+        {
+            _dictStatusReq = new Dictionary<ECharacterStatusType, int>();
+            foreach (var statusReq in statusRequirementsList)
+            {
+                _dictStatusReq[statusReq.statusType] = statusReq.requirementValue;
+            }
+        }
 
         public Rect GetRect()
         {
@@ -30,6 +59,11 @@ namespace DialogueSystem
         public string GetText()
         {
             return text;
+        }
+        
+        public string GetSpeakerName()
+        {
+            return speakerName;
         }
 
         public List<string> GetChildren()
@@ -50,6 +84,11 @@ namespace DialogueSystem
         public IEnumerable<int> GetRemoveBuffIDList()
         {
             return listRemoveBuffID;
+        }
+        
+        public Dictionary<ECharacterStatusType, int> GetStatusReqDict()
+        {
+            return _dictStatusReq;
         }
 
 #if UNITY_EDITOR
