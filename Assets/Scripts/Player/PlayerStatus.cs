@@ -39,6 +39,9 @@ namespace Player
         private string _crushPersonalityType;  // 4 letters, e.g. "INTP"
         
         private float _crushFavorability;
+
+        public int numGoAlongPersona;
+        public int numGoAgainstPersona;
         
         
         private Dictionary<EPersonalityTraits, List<ECharacterStatusType>> _dictTrait2StatusType =
@@ -203,6 +206,55 @@ namespace Player
             
             // 16. Add the favorability value to the player
             _crushFavorability += favorabilityValue;
+        }
+
+        public void ReceivePersonalityType(string personalityType)
+        {
+            Debug.LogWarning("III");
+            Debug.LogWarning(personalityType);
+            if (int.TryParse(personalityType, out int intResult))
+            {
+                switch (intResult)
+                {
+                    case 1:
+                        _playerPersonalityType += "E";
+                        break;
+                    case 2:
+                        _playerPersonalityType += "I";
+                        break;
+                    case 3:
+                        _playerPersonalityType += "S";
+                        break;
+                    case 4:
+                        _playerPersonalityType += "N";
+                        break;
+                    case 5:
+                        _playerPersonalityType += "T";
+                        break;
+                    case 6:
+                        _playerPersonalityType += "F";
+                        break;
+                    case 7:
+                        _playerPersonalityType += "J";
+                        break;
+                    case 8:
+                        _playerPersonalityType += "P";
+                        break;
+                        
+                }
+            }
+            else
+            {
+                if (_playerPersonalityType.Contains(personalityType))
+                {
+                    Debug.LogError("+++");
+                    numGoAlongPersona++;
+                }
+                else
+                {
+                    numGoAgainstPersona++;
+                }
+            }
         }
     }
 }

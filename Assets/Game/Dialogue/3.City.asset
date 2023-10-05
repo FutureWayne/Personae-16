@@ -1,0 +1,661 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8979661823649724917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 47c4d3b4-7b1a-4080-b68c-db8abbf96a03
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "You know, Mia, these weeks have been incredible. I\u2019ve learned so much
+    about you, about your dreams, and it\u2019s been inspiring"
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 410
+    y: 129
+    width: 200
+    height: 100
+  children:
+  - 35dece43-97d6-42a9-86e2-13e89fcf1807
+  statusRequirementsList: []
+--- !u!114 &-6941708648426060811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: eb97354f-ff6a-4bb1-8d87-5c30618f3f14
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Express the affection through Feeling
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: F
+  rect:
+    serializedVersion: 2
+    x: 1919
+    y: 175
+    width: 200
+    height: 100
+  children:
+  - ae7f2c62-1562-4c54-9a80-d3498168ceb3
+  statusRequirementsList: []
+--- !u!114 &-6045904934625042906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 2f657fc0-8a2b-472e-9529-521e5ad55cca
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb takes a deep breath, feeling the moment is right to express his feelings.
+    The player now decides how Seb will reveal his feelings.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1658
+    y: 130
+    width: 200
+    height: 100
+  children:
+  - 3027e6bf-29a0-4760-8d88-f3e482fc7ad1
+  - eb97354f-ff6a-4bb1-8d87-5c30618f3f14
+  - d7b32291-c526-476c-a320-b35658a3fba3
+  - 70cdabca-e290-4374-b832-f774b7e246ba
+  statusRequirementsList: []
+--- !u!114 &-5773264054464030190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 1805bea3-8be1-41f7-8411-efb47097ab3b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "There is indeed something magical between us, Seb. It\u2019s like a spark,
+    an unspoken understanding that\u2019s both exciting and mysterious. I\u2019m
+    intrigued to explore this extraordinary connection further."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2439
+    y: 305
+    width: 200
+    height: 100
+  children:
+  - 0d115f4c-1189-49fa-ae23-c60775e72640
+  statusRequirementsList: []
+--- !u!114 &-5082310219511192980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: a06f747b-b901-4ce7-a917-c32b364c0c30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, your words resonate with me deeply. I feel the same warmth and joy
+    when I\u2019m with you. It\u2019s like a beautiful song that plays just for us."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2419
+    y: 175
+    width: 200
+    height: 100
+  children:
+  - 0d115f4c-1189-49fa-ae23-c60775e72640
+  statusRequirementsList: []
+--- !u!114 &-4446151232618351088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d7b32291-c526-476c-a320-b35658a3fba3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Express the affection through Intuition
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: N
+  rect:
+    serializedVersion: 2
+    x: 1937
+    y: 302
+    width: 200
+    height: 100
+  children:
+  - d5c128ee-9ad6-4459-8877-cb4b6c115b54
+  statusRequirementsList: []
+--- !u!114 &-2667623848167978168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 35dece43-97d6-42a9-86e2-13e89fcf1807
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "I could say the same, Seb. Your passion for music, for jazz, it\u2019s contagious.
+    It makes me believe that dreams are worth chasing"
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 660
+    y: 129
+    width: 200
+    height: 100
+  children:
+  - 6d4a769a-921b-4b7d-b943-d9013f2b7ce6
+  statusRequirementsList: []
+--- !u!114 &-2272090221049646133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e2bbae5b-a5ec-4417-bf44-34b8981a08ba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb and Mia sit on a hill, the city lights twinkling below. Weeks of shared
+    dreams and support have brought them closer. Tonight, the atmosphere is different,
+    charged with unspoken emotions.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 9b11b82d03c668d4e8e0ebdd9996c323, type: 3}
+  audioClip: {fileID: 8300000, guid: e40bf17f3cf92214990f22a97532c673, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 160
+    y: 127
+    width: 200
+    height: 100
+  children:
+  - 47c4d3b4-7b1a-4080-b68c-db8abbf96a03
+  statusRequirementsList: []
+--- !u!114 &-2264320925009683105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 3406821c-20ef-42fd-9d84-7d507ec77068
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "You\u2019re right, Seb. Our time together has been comfortable and easy,
+    filled with laughter and joy. It feels real and solid, like the foundation of
+    something beautiful."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2431
+    y: 430
+    width: 200
+    height: 100
+  children:
+  - 0d115f4c-1189-49fa-ae23-c60775e72640
+  statusRequirementsList: []
+--- !u!114 &-1243468796592326777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 3027e6bf-29a0-4760-8d88-f3e482fc7ad1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Express the affection through Thinking
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: T
+  rect:
+    serializedVersion: 2
+    x: 1923
+    y: 57
+    width: 200
+    height: 100
+  children:
+  - 05fb4c43-17ca-4307-8a6b-fe87edf21303
+  statusRequirementsList: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1910950879e1ba4eb77b0b117761e74, type: 3}
+  m_Name: 3.City
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2272090221049646133}
+  - {fileID: -8979661823649724917}
+  - {fileID: -2667623848167978168}
+  - {fileID: 7313163017662903844}
+  - {fileID: 8671122461182397296}
+  - {fileID: 9199995673855287834}
+  - {fileID: -6045904934625042906}
+  - {fileID: -1243468796592326777}
+  - {fileID: -6941708648426060811}
+  - {fileID: -4446151232618351088}
+  - {fileID: 6702334869250180643}
+  - {fileID: 5313108822252281862}
+  - {fileID: 6329571011962474848}
+  - {fileID: 2396661510518813911}
+  - {fileID: 2808380674297149621}
+  - {fileID: 8816443359839363664}
+  - {fileID: -5082310219511192980}
+  - {fileID: -5773264054464030190}
+  - {fileID: -2264320925009683105}
+  - {fileID: 6160352359972947340}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2396661510518813911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d5c128ee-9ad6-4459-8877-cb4b6c115b54
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, there\u2019s a magnetic energy between us, a kind of mystical connection
+    that I can\u2019t put into words. I feel we\u2019re destined for something extraordinary."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2189
+    y: 302
+    width: 200
+    height: 100
+  children:
+  - 1805bea3-8be1-41f7-8411-efb47097ab3b
+  statusRequirementsList: []
+--- !u!114 &2808380674297149621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 040914b7-40d3-4575-accd-56ac12a5ae26
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, I\u2019ve noticed the tangible chemistry between us, the comfortable
+    ease and the shared laughter. It\u2019s evident to me that we have something
+    real and solid."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2181
+    y: 430
+    width: 200
+    height: 100
+  children:
+  - 3406821c-20ef-42fd-9d84-7d507ec77068
+  statusRequirementsList: []
+--- !u!114 &5313108822252281862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 05fb4c43-17ca-4307-8a6b-fe87edf21303
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Mia, after a rational assessment of our interactions and shared values, I
+    conclude that my feelings for you are strong and genuine.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2173
+    y: 57
+    width: 200
+    height: 100
+  children:
+  - 95b08227-3cf6-4dd8-9020-090cb0e8183a
+  statusRequirementsList: []
+--- !u!114 &6160352359972947340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 0d115f4c-1189-49fa-ae23-c60775e72640
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia\u2019s words ignite a spark in Seb. The stars above seem to twinkle
+    in approval as Seb gently takes Mia\u2019s hand, their fingers intertwining.
+    In this silent, tender moment under the moonlit sky, a new chapter of love and
+    shared dreams begins for them."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: ddacea63ab54e1d49880d155d2e6ccac, type: 3}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2873
+    y: 253
+    width: 200
+    height: 100
+  children: []
+  statusRequirementsList: []
+--- !u!114 &6329571011962474848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ae7f2c62-1562-4c54-9a80-d3498168ceb3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, when I\u2019m with you, there\u2019s this indescribable warmth and
+    joy that fills my heart. I believe I\u2019m falling deeply in love with you"
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2169
+    y: 175
+    width: 200
+    height: 100
+  children:
+  - a06f747b-b901-4ce7-a917-c32b364c0c30
+  statusRequirementsList: []
+--- !u!114 &6702334869250180643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 70cdabca-e290-4374-b832-f774b7e246ba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Express the affection through Sensing
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: S
+  rect:
+    serializedVersion: 2
+    x: 1905
+    y: 416
+    width: 200
+    height: 100
+  children:
+  - 040914b7-40d3-4575-accd-56ac12a5ae26
+  statusRequirementsList: []
+--- !u!114 &7313163017662903844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 6d4a769a-921b-4b7d-b943-d9013f2b7ce6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb smiles, looking at Mia with a depth of emotion in his eyes.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 910
+    y: 129
+    width: 200
+    height: 100
+  children:
+  - 938c0db8-949c-407f-ac16-f195768b2849
+  statusRequirementsList: []
+--- !u!114 &8671122461182397296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 938c0db8-949c-407f-ac16-f195768b2849
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Dreams are the melodies of our souls, don\u2019t you think? They\u2019re
+    the music that keeps us going, pushing us to strive for more, to reach for the
+    stars."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1160
+    y: 128
+    width: 200
+    height: 100
+  children:
+  - 3f073e64-c7f6-4302-b769-965f85863259
+  statusRequirementsList: []
+--- !u!114 &8816443359839363664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 95b08227-3cf6-4dd8-9020-090cb0e8183a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, I appreciate your honesty and logical approach. It\u2019s reassuring
+    to know that you\u2019ve thought this through. I too believe we have something
+    strong and genuine."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2423
+    y: 57
+    width: 200
+    height: 100
+  children:
+  - 0d115f4c-1189-49fa-ae23-c60775e72640
+  statusRequirementsList: []
+--- !u!114 &9199995673855287834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 3f073e64-c7f6-4302-b769-965f85863259
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "That\u2019s beautifully said, Seb. And under this starry sky, it feels like
+    anything is possible, like our dreams are within reach."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1410
+    y: 128
+    width: 200
+    height: 100
+  children:
+  - 2f657fc0-8a2b-472e-9529-521e5ad55cca
+  statusRequirementsList: []

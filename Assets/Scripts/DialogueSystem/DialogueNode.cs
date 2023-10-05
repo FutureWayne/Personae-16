@@ -33,11 +33,17 @@ namespace DialogueSystem
         [SerializeField]
         Sprite background;
         
+        [SerializeField]
+        AudioClip audioClip;
+        
         [Header("Buff Effect")]
         [SerializeField]
         List<int> listAddBuffID;
         [SerializeField]
         List<int> listRemoveBuffID;
+        
+        [SerializeField]
+        string personalityType;
                 
         [SerializeField][HideInInspector]
         Rect rect = new Rect(0, 0, 200, 100);
@@ -85,7 +91,17 @@ namespace DialogueSystem
         {
             return background;
         }
+        
+        public AudioClip GetAudioClip()
+        {
+            return audioClip;
+        }
 
+        public string GetPersonalityType()
+        {
+            return personalityType;
+        }
+        
         public List<string> GetChildren()
         {
             return children;

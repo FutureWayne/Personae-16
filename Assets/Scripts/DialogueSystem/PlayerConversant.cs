@@ -71,6 +71,16 @@ namespace DialogueSystem
         {
             return _currentNode.GetBackground();
         }
+        
+        public AudioClip GetAudioClip()
+        {
+            return _currentNode.GetAudioClip();
+        }
+        
+        public string GetPersonalityType()
+        {
+            return _currentNode.GetPersonalityType();
+        }
 
         public void MoveToNextNode()
         {
@@ -117,6 +127,12 @@ namespace DialogueSystem
         public void SelectChoiceNode(DialogueNode chosenNode)
         {
             _currentNode = chosenNode;
+            
+            string personalityType = GetPersonalityType();
+            if (!string.IsNullOrEmpty(personalityType))
+            {
+                _playerStatus.ReceivePersonalityType(personalityType);
+            }
             
             TriggerEnterAction();
             _isChoosing = false;
