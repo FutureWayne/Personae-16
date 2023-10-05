@@ -35,7 +35,6 @@ namespace DialogueSystem
          **********************************************/
         public void StartDialogue(Dialogue dialogue)
         {
-            Debug.LogError("StartDialogue&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
             _currentDialogue = dialogue;
             _currentNode = _currentDialogue.GetRootNode();
             
@@ -77,6 +76,7 @@ namespace DialogueSystem
         {
             if (_currentNode is null || !HasNextNode())
             {
+                GameManager.Instance.OnDialogueEnds();
                 return;
             }
             

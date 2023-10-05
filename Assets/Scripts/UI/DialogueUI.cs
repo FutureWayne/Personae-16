@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueSystem;
@@ -38,7 +39,9 @@ namespace UI
         [SerializeField]
         private Image npcAvatar;
         [SerializeField]
-        private Image backgroundImage;
+        private Image newBackgroundImg;
+        [SerializeField]
+        private Image currentBackgroundImg;
         
         [SerializeField]
         private List<CharacterRes> characterAvatarRes = new();
@@ -139,9 +142,38 @@ namespace UI
             var background = _playerConversant.GetBackground();
             if (background != null)
             {
-                backgroundImage.sprite = background;
+                StartCoroutine(TransitionToNewBackground(background));
             }
+            
         }
+        
+        private IEnumerator TransitionToNewBackground(Sprite newBackground)
+        {
+            newBackgroundImg.sprite = newBackground;
+            float elapsedTime = 0f;
+            var transitionTime = 1f; // Set this to the number of seconds you want the transition to take
+
+            Color currentStartColor = currentBackgroundImg.color;
+            Color newStartColor = new Color(newBackgroundImg.color.r, newBackgroundImg.color.g, newBackgroundImg.color.b, 0);
+
+            while (elapsedTime < transitionTime)
+            {
+                elapsedTime += Time.deltaTime;
+                float alpha = elapsedTime / transitionTime;
+
+                // Interpolate the color values over time
+                currentBackgroundImg.color = Color.Lerp(currentStartColor, new Color(currentStartColor.r, currentStartColor.g, currentStartColor.b, 0), alpha);
+                newBackgroundImg.color = Color.Lerp(newStartColor, new Color(newStartColor.r, newStartColor.g, newStartColor.b, 1), alpha);
+
+                yield return null; // Wait for the next frame
+            }
+            
+            // At the end of the transition, set the current background to the next one
+            currentBackgroundImg.sprite = newBackground;
+            currentBackgroundImg.color = new Color(currentBackgroundImg.color.r, currentBackgroundImg.color.g, currentBackgroundImg.color.b, 1);
+            newBackgroundImg.color = new Color(newBackgroundImg.color.r, newBackgroundImg.color.g, newBackgroundImg.color.b, 0);
+        }
+
 
         private void BuildChoiceList()
         {

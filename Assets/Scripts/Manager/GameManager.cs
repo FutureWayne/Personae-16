@@ -10,10 +10,23 @@ public class GameManager : MonoBehaviour
     private List<Dialogue> listDialogues;
     
     private PlayerConversant _playerConversant;
+    
+    private int _currentDialogueIndex = 0;
+    
+    public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // Start is called before the first frame update
@@ -22,7 +35,7 @@ public class GameManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").TryGetComponent(out _playerConversant);
         
         
-        _playerConversant.StartDialogue(listDialogues[0]);
+        _playerConversant.StartDialogue(listDialogues[_currentDialogueIndex]);
        
     }
 
@@ -32,5 +45,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnDialogueEnds()
+    {
+        _currentDialogueIndex++;
+        _playerConversant.StartDialogue(listDialogues[_currentDialogueIndex]);
     }
 }

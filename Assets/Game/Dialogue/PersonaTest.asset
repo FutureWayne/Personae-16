@@ -61,7 +61,7 @@ MonoBehaviour:
   text: I am Mia
   speakerName: Boss
   speakerType: 1
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: b780a9402a2837e4cb6d7fac1429e7ca, type: 3}
   listAddBuffID: 
   listRemoveBuffID: 
   rect:
