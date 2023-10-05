@@ -64,7 +64,7 @@ namespace Player
         
         private void Awake()
         {
-            InitPersonaValueAndStatus();
+            //InitPersonaValueAndStatus();
         }
         
         private void InitPersonaValueAndStatus()

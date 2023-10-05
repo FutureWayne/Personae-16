@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8521632213512644016}
+  - component: {fileID: 1021993509488459057}
   - component: {fileID: 3634743363359878972}
   - component: {fileID: 5181199975612627426}
   - component: {fileID: 8008262796852886927}
-  - component: {fileID: 1021993509488459057}
   - component: {fileID: 514178451378627028}
   m_Layer: 5
   m_Name: DialogueBox
@@ -42,6 +42,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -289}
   m_SizeDelta: {x: 1000, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1021993509488459057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778849875642345975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28e2fc6d18e17642bdeff75e61fff9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiResponseText: {fileID: 2388824561700034309}
+  speakerNameText: {fileID: 5593360724766996678}
+  nextButton: {fileID: 0}
+  choiceRoot: {fileID: 4330208627607241706}
+  aiResponseRoot: {fileID: 5785824905424451541}
+  choicePrefab: {fileID: 4888974909973993986, guid: 994819d2d2506cc4a850842fb9341fd3, type: 3}
+  playerAvatar: {fileID: 0}
+  npcAvatar: {fileID: 0}
+  backgroundImage: {fileID: 0}
+  characterAvatarRes: []
 --- !u!222 &3634743363359878972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -90,24 +112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &1021993509488459057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778849875642345975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c28e2fc6d18e17642bdeff75e61fff9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiResponseText: {fileID: 2388824561700034309}
-  speakerNameText: {fileID: 5593360724766996678}
-  nextButton: {fileID: 0}
-  choiceRoot: {fileID: 4330208627607241706}
-  aiResponseRoot: {fileID: 5785824905424451541}
-  choicePrefab: {fileID: 4888974909973993986, guid: 994819d2d2506cc4a850842fb9341fd3, type: 3}
 --- !u!114 &514178451378627028
 MonoBehaviour:
   m_ObjectHideFlags: 0
