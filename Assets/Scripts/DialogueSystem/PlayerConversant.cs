@@ -62,6 +62,11 @@ namespace DialogueSystem
         {
             return _currentNode is null ? "" : _currentNode.GetText();
         }
+        
+        public string GetCurrentSpeakerName()
+        {
+            return _currentNode is null ? "" : _currentNode.GetSpeakerName();
+        }
 
         public void MoveToNextNode()
         {

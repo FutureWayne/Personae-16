@@ -12,6 +12,8 @@ namespace UI
         [SerializeField]
         TextMeshProUGUI aiResponseText;
         [SerializeField]
+        TextMeshProUGUI speakerNameText;
+        [SerializeField]
         Button nextButton;
         [SerializeField]
         Transform choiceRoot;
@@ -60,7 +62,8 @@ namespace UI
             var isChoosing = _playerConversant.IsChoosing();
             
             aiResponseText.text = _playerConversant.GetCurrentNodeText();
-            nextButton.gameObject.SetActive(_playerConversant.HasNextNode());
+            speakerNameText.text = _playerConversant.GetCurrentSpeakerName();
+            nextButton.gameObject.SetActive(_playerConversant.HasNextNode() && !isChoosing);
             choiceRoot.gameObject.SetActive(isChoosing);
             
             if (isChoosing)

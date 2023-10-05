@@ -15,10 +15,13 @@ namespace DialogueSystem
 
     public class DialogueNode : ScriptableObject
     {
+        [Header("Dialogue")]
         [SerializeField]
         private bool isPlayerSpeaking;
         [SerializeField]
         string text;
+        [SerializeField]
+        string speakerName;
         
         [Header("Buff Effect")]
         [SerializeField]
@@ -56,6 +59,11 @@ namespace DialogueSystem
         public string GetText()
         {
             return text;
+        }
+        
+        public string GetSpeakerName()
+        {
+            return speakerName;
         }
 
         public List<string> GetChildren()
