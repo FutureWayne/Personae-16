@@ -32,6 +32,8 @@ namespace Buff
             {
                 _dictBuffDuration.Add(buffData, new List<int>() {buffData.duration});
             }
+            
+            _playerStatus.SetPersona(buffData.aspect, _playerStatus.GetPersona(buffData.aspect) + buffData.personaModifier);
         }
 
         public void RemoveBuff(BuffData buffData)

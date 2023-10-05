@@ -28,6 +28,7 @@ namespace Buff
                         buff.modifierA = int.Parse(fields[3]);
                         buff.modifierB = int.Parse(fields[4]);
                         buff.duration = int.Parse(fields[5]);
+                        buff.personaModifier = int.Parse(fields[6]);
                     
                         string assetPath = $"Assets/Game/Buffs/{buff.buffName}.asset";
                         AssetDatabase.CreateAsset(buff, assetPath);
