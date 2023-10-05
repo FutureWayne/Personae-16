@@ -54,5 +54,6 @@ public class GameManager : MonoBehaviour
     {
         dialogueCanvas.gameObject.SetActive(false);
         _currentDialogueIndex++;
+        ResumeDialogue();
     }
 }

@@ -1132,6 +1132,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -108.62
       objectReference: {fileID: 0}
+    - target: {fileID: 6495001995343188887, guid: 8d3b8796868c90845a3da311a80f4a65, type: 3}
+      propertyPath: characterAvatarRes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495001995343188887, guid: 8d3b8796868c90845a3da311a80f4a65, type: 3}
+      propertyPath: characterAvatarRes.Array.data[2].characterName
+      value: Mia
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495001995343188887, guid: 8d3b8796868c90845a3da311a80f4a65, type: 3}
+      propertyPath: characterAvatarRes.Array.data[1].characterAvatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ed3430a12479b748aee9d757bde47f5, type: 3}
+    - target: {fileID: 6495001995343188887, guid: 8d3b8796868c90845a3da311a80f4a65, type: 3}
+      propertyPath: characterAvatarRes.Array.data[2].characterAvatar
+      value: 
+      objectReference: {fileID: 21300000, guid: a79988e1a623c1c4d8cbe81dfdb5433b, type: 3}
     - target: {fileID: 7501806776919960908, guid: 8d3b8796868c90845a3da311a80f4a65, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
