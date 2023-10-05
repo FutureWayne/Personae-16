@@ -2,7 +2,13 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
+
+public enum SpeakerType
+{
+    Player,
+    Npc,
+    Narrative
+}
 
 namespace DialogueSystem
 {
@@ -22,6 +28,10 @@ namespace DialogueSystem
         string text;
         [SerializeField]
         string speakerName;
+        [SerializeField]
+        SpeakerType speakerType = SpeakerType.Narrative;
+        [SerializeField]
+        Sprite background;
         
         [Header("Buff Effect")]
         [SerializeField]
@@ -64,6 +74,16 @@ namespace DialogueSystem
         public string GetSpeakerName()
         {
             return speakerName;
+        }
+        
+        public SpeakerType GetSpeakerType()
+        {
+            return speakerType;
+        }
+        
+        public Sprite GetBackground()
+        {
+            return background;
         }
 
         public List<string> GetChildren()

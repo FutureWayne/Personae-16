@@ -6,6 +6,7 @@ namespace Buff
 {
     public static class BuffCfgReader
     {
+        #if UNITY_EDITOR
         [MenuItem("Tools/Import Buffs from CSV")]
         public static void ImportBuffs()
         {
@@ -41,5 +42,7 @@ namespace Buff
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
+        
+        #endif
     }
 }

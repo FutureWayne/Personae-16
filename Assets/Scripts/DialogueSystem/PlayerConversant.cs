@@ -10,9 +10,6 @@ namespace DialogueSystem
 {
     public class PlayerConversant : MonoBehaviour
     {
-        [SerializeField]
-        private Dialogue newDialogue;
-        
         private Dialogue _currentDialogue;
         
         private DialogueNode _currentNode;
@@ -23,14 +20,11 @@ namespace DialogueSystem
         
         public event Action OnConversationUpdated; 
         
-        IEnumerator Start()
+        void Start()
         {
-            yield return new WaitForSeconds(1);
-            StartDialogue(newDialogue);
-            
             _playerStatus = GetComponent<PlayerStatus>();
         }
-        
+
         public bool IsActive()
         {
             return _currentDialogue != null;
@@ -39,8 +33,9 @@ namespace DialogueSystem
         /**********************************************
          * Call this method to start a new conversation
          **********************************************/
-        private void StartDialogue(Dialogue dialogue)
+        public void StartDialogue(Dialogue dialogue)
         {
+            Debug.LogError("StartDialogue&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
             _currentDialogue = dialogue;
             _currentNode = _currentDialogue.GetRootNode();
             
@@ -66,6 +61,16 @@ namespace DialogueSystem
         public string GetCurrentSpeakerName()
         {
             return _currentNode is null ? "" : _currentNode.GetSpeakerName();
+        }
+        
+        public SpeakerType GetCurrentSpeakerType()
+        {
+            return _currentNode.GetSpeakerType();
+        }
+
+        public Sprite GetBackground()
+        {
+            return _currentNode.GetBackground();
         }
 
         public void MoveToNextNode()
