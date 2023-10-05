@@ -1,0 +1,2082 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8502598818375477935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 93cb4c61-d83c-4bb0-9d8e-81985874d5b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "I\u2019ll do everything in my power to be there, Mia. Your audition means
+    the world to me, and I want to be there to see you shine."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2694
+    y: 777
+    width: 200
+    height: 100
+  children:
+  - fa6ab0d7-a45f-472c-b587-6c5371eb1f1c
+  statusRequirementsList: []
+--- !u!114 &-8449534654251462650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 344bf376-e7e4-4857-ba61-5c099ba6d5d2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What are you gonna do?
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2285
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - deb9759e-82f9-4502-8151-dc239652ec45
+  statusRequirementsList: []
+--- !u!114 &-8371058633656790322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 512f0320-3409-427a-973c-7d33bfd6b295
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, perhaps it\u2019s best for both of us to take a break. "
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1245
+    y: 1461
+    width: 200
+    height: 100
+  children:
+  - 9e8afdf0-0e93-4d40-a666-5a73cafad7e5
+  statusRequirementsList: []
+--- !u!114 &-8345800414483843960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 9726f25e-438d-4d7f-9a65-4251f73dc194
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb finds himself increasingly entangled in the whirlwind of tours and performances
+    with \u2018The Messengers\u2019."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1053
+    y: 624
+    width: 200
+    height: 100
+  children:
+  - 502fd5b3-770b-4212-9f80-4302d38373df
+  statusRequirementsList: []
+--- !u!114 &-8306210338129223044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 8375df38-7138-49bd-a83a-2bc560265a40
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Be implicit
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: I
+  rect:
+    serializedVersion: 2
+    x: 974
+    y: 1625
+    width: 200
+    height: 100
+  children:
+  - 08bd5fa7-34b9-4227-b5f9-b312f868a0f8
+  statusRequirementsList: []
+--- !u!114 &-8204057053086927379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: a0286c92-0a24-4b24-b14b-fea9faa6710d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It might not be the jazz I love, but perhaps this is an opportunity, a stepping
+    stone towards something greater in the future
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2140
+    y: 354
+    width: 200
+    height: 100
+  children:
+  - e7373c4d-9aec-41b4-81da-74cdbc4786e5
+  statusRequirementsList: []
+--- !u!114 &-7910966544789899206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ed1364ef-278d-47e2-81fb-a5710737580f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb and Mia both chuckled, with tears in their eyes.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3537
+    y: 1550
+    width: 200
+    height: 100
+  children:
+  - 0df45aef-f6c3-422b-b99e-5411a14db329
+  statusRequirementsList: []
+--- !u!114 &-7685855234836808758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 8bce208e-5305-4ffd-97b1-8a577cd14f54
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Decline job offer
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: N
+  rect:
+    serializedVersion: 2
+    x: 186
+    y: 884
+    width: 200
+    height: 100
+  children:
+  - 7a2109d9-1875-41cd-8b32-4d1dad727747
+  statusRequirementsList: []
+--- !u!114 &-7607934982068662155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e1a01fb4-9c32-4b43-9743-f6f410d4bcc7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Follow the feeling
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: F
+  rect:
+    serializedVersion: 2
+    x: 2446
+    y: 775
+    width: 200
+    height: 100
+  children:
+  - 93cb4c61-d83c-4bb0-9d8e-81985874d5b6
+  statusRequirementsList: []
+--- !u!114 &-7103189075343341252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 84c1f7d4-b56f-4856-acc5-ec3d9b90f9ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: One evening, Seb returns home with news. He's been offered a spot in a popular
+    band, a gig that promises financial stability but strays far from the jazz music
+    he holds dear.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 403
+    y: 177
+    width: 200
+    height: 100
+  children:
+  - 16d25424-a9c8-4b9f-bf93-c500a887d4d4
+  statusRequirementsList: []
+--- !u!114 &-7079079296589160017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 72613f78-0ca4-4af9-8d84-55aafc8cd296
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: And you love jazz now, right?
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3287
+    y: 1550
+    width: 200
+    height: 100
+  children:
+  - ed1364ef-278d-47e2-81fb-a5710737580f
+  statusRequirementsList: []
+--- !u!114 &-6652972010808042939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e7373c4d-9aec-41b4-81da-74cdbc4786e5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "A stepping stone? Seb, I\u2019ve seen many get lost on those \u2018stepping
+    stones\u2019, never reaching where they intended to go. I just don\u2019t want
+    you to lose sight of your true dream."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2361
+    y: 339
+    width: 200
+    height: 100
+  children:
+  - 27adc3ca-0761-4973-920b-4231a43f4ddb
+  statusRequirementsList: []
+--- !u!114 &-6436646980458862097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ea7ee111-8b49-4fc0-b068-e3e84c5595ad
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "But Seb, that\u2019s not the music you want to play, is it?"
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1405
+    y: 178
+    width: 200
+    height: 100
+  children:
+  - d6b6fb17-cb62-44ef-b695-f66b659a612e
+  statusRequirementsList: []
+--- !u!114 &-6282554757270184536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7c5a5648-36d2-40c5-8dcf-5a76ff902fae
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb decides to join \u2018The Messengers\u2019, opting for financial stability
+    and a secure, albeit different, future for him and Mia"
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 35dc95fec79132d478f5ad7da532f7ad, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 553
+    y: 624
+    width: 200
+    height: 100
+  children:
+  - c3a28137-e5f6-477f-8876-e09606640620
+  statusRequirementsList: []
+--- !u!114 &-6279675252478660587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7933a464-e7b0-4cd4-bcea-2187bca2cb72
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Mia, with eyes dimmed by disappointment, approaches Seb. Her voice, usually
+    vibrant and full of life, now whispers the sad melody of ending and departure.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3114
+    y: 663
+    width: 200
+    height: 100
+  children:
+  - 4bf88489-655d-4731-8880-b24d7491d3e8
+  statusRequirementsList: []
+--- !u!114 &-6162910346760186389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 16d25424-a9c8-4b9f-bf93-c500a887d4d4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, I've got an offer from \u2018The Messengers\u2019. It\u2019s a steady
+    job with good pay."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 653
+    y: 177
+    width: 200
+    height: 100
+  children:
+  - db67504e-cdce-46a5-8085-98fe22617e86
+  statusRequirementsList: []
+--- !u!114 &-5963414867182584887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e888cdb8-5dc9-4823-95d4-2110b833eb56
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Maybe you\u2019re right, Seb. Some time apart might help us gain perspective.
+    Let\u2019s see how we feel after taking a break"
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2793
+    y: 1175
+    width: 200
+    height: 100
+  children:
+  - e3ac7737-87b9-4f49-b2c3-a9c8cafc39e7
+  statusRequirementsList: []
+--- !u!114 &-5929951387659495174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: b59930b2-6eb3-4644-a493-49abba7dea77
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb, what do we  do?
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 710
+    y: 1526
+    width: 200
+    height: 100
+  children:
+  - 23285791-22f7-4464-9818-f8a7beb46ee3
+  - 8375df38-7138-49bd-a83a-2bc560265a40
+  statusRequirementsList: []
+--- !u!114 &-5902497781595842246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 05c0dd00-65d5-482d-a1b9-4c7f0a6738e0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Persuade
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: J
+  rect:
+    serializedVersion: 2
+    x: 3831
+    y: 536
+    width: 200
+    height: 100
+  children:
+  - 7abd1bf8-fd86-4415-8960-05a698f89256
+  statusRequirementsList: []
+--- !u!114 &-5501730483797148459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e85c5934-ca7e-48ab-aacc-3f75eb3b839a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Months have passed since Seb and Mia started their romantic journey. Their
+    days have been filled with laughter, support, and the joyous melody of love.
+    However, clouds of discord are looming on the horizon
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 172ba0d581035ba47805675bb732b40b, type: 3}
+  audioClip: {fileID: 8300000, guid: 43d3450958dde5e4b8c7646c4f777067, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 153
+    y: 177
+    width: 200
+    height: 100
+  children:
+  - 84c1f7d4-b56f-4856-acc5-ec3d9b90f9ff
+  statusRequirementsList: []
+--- !u!114 &-5052602131660433242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: bf994984-b2eb-49de-8a43-3c6064432b67
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "You supported my dreams, Mia. Now it\u2019s my turn to support yours. Go
+    embrace this opportunity."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: F
+  rect:
+    serializedVersion: 2
+    x: 1812
+    y: 931
+    width: 200
+    height: 100
+  children:
+  - b8461bdd-1c99-421a-94dd-0bff3aa2b7aa
+  statusRequirementsList: []
+--- !u!114 &-5046334664976601579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 9b6e33e6-226f-4e1c-8746-e94e5a374c4f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: As Mia's departure day arrives, the air between them is tense with unspoken
+    words and looming decisions. With uncertainty in their eyes, Seb and Mia face
+    a crucial crossroad of commitment and sacrifice.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 772c624d064ae314fb7dbfbcea48d78f, type: 3}
+  audioClip: {fileID: 8300000, guid: fae62ee52d4ff8f41973c4a278cc93eb, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 331
+    y: 1438
+    width: 200
+    height: 100
+  children:
+  - b59930b2-6eb3-4644-a493-49abba7dea77
+  statusRequirementsList: []
+--- !u!114 &-4974377085022150652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d02d3b75-bc86-432a-9dd4-851e67a91899
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Stay here and get my own thing going
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2785
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - 66c2f38d-5167-4469-b929-f98f0ae9a901
+  statusRequirementsList: []
+--- !u!114 &-4039204884865738152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 6be74e3f-20ee-4f95-b884-3dc0729c4f69
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "You\u2019re right, Seb. It\u2019s a significant step for my career. I appreciate
+    your practical support and understanding in this."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2060
+    y: 1134
+    width: 200
+    height: 100
+  children:
+  - 9b6e33e6-226f-4e1c-8746-e94e5a374c4f
+  statusRequirementsList: []
+--- !u!114 &-3685762730539939049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 502fd5b3-770b-4212-9f80-4302d38373df
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The spotlight shines brightly on Seb, but the glow of fame casts shadows,
+    creating distance between him and Mia.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1303
+    y: 624
+    width: 200
+    height: 100
+  children:
+  - c07b9b5b-6ca0-4a5d-b3a6-36fc2798f608
+  statusRequirementsList: []
+--- !u!114 &-3623475348955713670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: db67504e-cdce-46a5-8085-98fe22617e86
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Really? What kind of music do they play?
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 903
+    y: 177
+    width: 200
+    height: 100
+  children:
+  - e23a2f9b-6a8e-49e1-9572-90dfc627c60b
+  statusRequirementsList: []
+--- !u!114 &-3255325393200689024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 8f7378f2-f3bc-4054-9995-2f760e2a8661
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Be optimistic
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: N
+  rect:
+    serializedVersion: 2
+    x: 1904
+    y: 250
+    width: 200
+    height: 100
+  children:
+  - a0286c92-0a24-4b24-b14b-fea9faa6710d
+  statusRequirementsList: []
+--- !u!114 &-2863002822988190385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e23a2f9b-6a8e-49e1-9572-90dfc627c60b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Well, it\u2019s not exactly the pure jazz that I love. It\u2019s more commercial,
+    more mainstream."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1155
+    y: 178
+    width: 200
+    height: 100
+  children:
+  - ea7ee111-8b49-4fc0-b068-e3e84c5595ad
+  statusRequirementsList: []
+--- !u!114 &-2622722589682937274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: ccab3cc3-9d99-4855-bc55-c172aad05e83
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, I got the part! But it means I have to move to Paris for the shooting.
+    I don\u2019t know what to do."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1300
+    y: 1030
+    width: 200
+    height: 100
+  children:
+  - a6f877ba-a242-410c-bece-1ca98a4e3429
+  statusRequirementsList: []
+--- !u!114 &-2371634197825591950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: a6f877ba-a242-410c-bece-1ca98a4e3429
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb feels a mix of joy and dread. Mia\u2019s dream is within reach, but
+    it might stretch the fabric of their relationship thin. He is now faced with
+    a decision on how to respond."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1550
+    y: 1028
+    width: 200
+    height: 100
+  children:
+  - bf994984-b2eb-49de-8a43-3c6064432b67
+  - cd9d6ba1-a219-4531-a860-f81ab9a0b9a4
+  statusRequirementsList: []
+--- !u!114 &-2367766121356435155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 23285791-22f7-4464-9818-f8a7beb46ee3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Be explicit
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: E
+  rect:
+    serializedVersion: 2
+    x: 973
+    y: 1470
+    width: 200
+    height: 100
+  children:
+  - 512f0320-3409-427a-973c-7d33bfd6b295
+  statusRequirementsList: []
+--- !u!114 &-1540064427243273497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: cd9d6ba1-a219-4531-a860-f81ab9a0b9a4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "It\u2019s a career-defining opportunity, Mia. You should take it, and we'll
+    navigate our relationship accordingly"
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: T
+  rect:
+    serializedVersion: 2
+    x: 1810
+    y: 1134
+    width: 200
+    height: 100
+  children:
+  - 6be74e3f-20ee-4f95-b884-3dc0729c4f69
+  statusRequirementsList: []
+--- !u!114 &-1493731142213005085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: deb9759e-82f9-4502-8151-dc239652ec45
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I gotta follow my own plan, you know?
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2535
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - d02d3b75-bc86-432a-9dd4-851e67a91899
+  statusRequirementsList: []
+--- !u!114 &-1245714208802369132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d6b6fb17-cb62-44ef-b695-f66b659a612e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb sighs, feeling the weight of the decision on his shoulders. He needs
+    to find a way to responds to Mia\u2019s concern,"
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1655
+    y: 178
+    width: 200
+    height: 100
+  children:
+  - 99d22740-2801-4ae3-9ff3-aa128f1e69e7
+  - 8f7378f2-f3bc-4054-9995-2f760e2a8661
+  statusRequirementsList: []
+--- !u!114 &-1146815154353528445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c481320d-ca71-4890-a94d-8e9eb99fa50b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, I understand the need for stability, but at what cost? I fell in love
+    with a man who breathes and lives for jazz. I don\u2019t want you to lose that
+    spark, that passion."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2361
+    y: 64
+    width: 200
+    height: 100
+  children:
+  - 27adc3ca-0761-4973-920b-4231a43f4ddb
+  statusRequirementsList: []
+--- !u!114 &-512333795963233474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: b8461bdd-1c99-421a-94dd-0bff3aa2b7aa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb, your support means the world to me. Knowing you understand and stand
+    by me makes this decision easier. Thank you for being my rock.
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2062
+    y: 931
+    width: 200
+    height: 100
+  children:
+  - 9b6e33e6-226f-4e1c-8746-e94e5a374c4f
+  statusRequirementsList: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1910950879e1ba4eb77b0b117761e74, type: 3}
+  m_Name: 4.Home
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5501730483797148459}
+  - {fileID: -7103189075343341252}
+  - {fileID: -6162910346760186389}
+  - {fileID: -3623475348955713670}
+  - {fileID: -2863002822988190385}
+  - {fileID: -6436646980458862097}
+  - {fileID: -1245714208802369132}
+  - {fileID: 3377002131135495293}
+  - {fileID: -3255325393200689024}
+  - {fileID: -1146815154353528445}
+  - {fileID: -6652972010808042939}
+  - {fileID: 5169289368923195993}
+  - {fileID: 3746129175387362459}
+  - {fileID: 2528323246029466830}
+  - {fileID: -7685855234836808758}
+  - {fileID: -6282554757270184536}
+  - {fileID: 823839219539963579}
+  - {fileID: 5725096610667374713}
+  - {fileID: -8345800414483843960}
+  - {fileID: -3685762730539939049}
+  - {fileID: 6674483344500004356}
+  - {fileID: 6457969454460541632}
+  - {fileID: 776967685380018612}
+  - {fileID: 505715760477703412}
+  - {fileID: -7607934982068662155}
+  - {fileID: 6921490145773935819}
+  - {fileID: -6279675252478660587}
+  - {fileID: 2482224640903750939}
+  - {fileID: 931772021914520551}
+  - {fileID: -5902497781595842246}
+  - {fileID: 7452182974399433769}
+  - {fileID: 6492478664216742305}
+  - {fileID: 5776674423473636674}
+  - {fileID: 7061554329800441425}
+  - {fileID: -5963414867182584887}
+  - {fileID: 8779740440196239255}
+  - {fileID: -8204057053086927379}
+  - {fileID: 7625492974804041820}
+  - {fileID: 6541925664697361712}
+  - {fileID: -8502598818375477935}
+  - {fileID: 3330315392645298543}
+  - {fileID: 3984380800595303201}
+  - {fileID: -2622722589682937274}
+  - {fileID: -2371634197825591950}
+  - {fileID: -5052602131660433242}
+  - {fileID: -1540064427243273497}
+  - {fileID: -512333795963233474}
+  - {fileID: -4039204884865738152}
+  - {fileID: -5046334664976601579}
+  - {fileID: -5929951387659495174}
+  - {fileID: -2367766121356435155}
+  - {fileID: -8306210338129223044}
+  - {fileID: -8371058633656790322}
+  - {fileID: 4859017129124980558}
+  - {fileID: 7779923718162277122}
+  - {fileID: 4244012930132445457}
+  - {fileID: 179859084793598876}
+  - {fileID: -8449534654251462650}
+  - {fileID: -1493731142213005085}
+  - {fileID: -4974377085022150652}
+  - {fileID: 8237758979022770564}
+  - {fileID: -7079079296589160017}
+  - {fileID: -7910966544789899206}
+  - {fileID: 6065313559655575235}
+  - {fileID: 234757838926133905}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &179859084793598876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c3ab2d8b-5df9-4ce1-a1b7-a83ad68c3ac4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It's your dream.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2035
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - 344bf376-e7e4-4857-ba61-5c099ba6d5d2
+  statusRequirementsList: []
+--- !u!114 &234757838926133905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 62a18820-74d7-440c-b93a-10bd2d6dc04e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm always gonna love you too
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3104
+    y: 1713
+    width: 200
+    height: 100
+  children: []
+  statusRequirementsList: []
+--- !u!114 &505715760477703412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 82b9d195-b9fa-4d5d-95aa-d83305244f55
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Think it through
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: T
+  rect:
+    serializedVersion: 2
+    x: 2455
+    y: 539
+    width: 200
+    height: 100
+  children:
+  - 0b360995-d38f-4b54-9133-3f1b5840ce60
+  statusRequirementsList: []
+--- !u!114 &776967685380018612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: f0730ee2-1cf0-4761-8078-130e3dea2d9d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb\u2019s heart sinks. The band has scheduled a photo shoot for their upcoming
+    tour on the same day."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2200
+    y: 622
+    width: 200
+    height: 100
+  children:
+  - 82b9d195-b9fa-4d5d-95aa-d83305244f55
+  - e1a01fb4-9c32-4b43-9743-f6f410d4bcc7
+  statusRequirementsList: []
+--- !u!114 &823839219539963579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7a2109d9-1875-41cd-8b32-4d1dad727747
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb chooses to stay true to his love for jazz, risking financial instability
+    but preserving the integrity of his dreams and passion.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 1e577fde5623e4041b7f93c558315de4, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 547
+    y: 1026
+    width: 200
+    height: 100
+  children:
+  - 60049aaa-42d6-4f18-a0bb-a12f644f061e
+  statusRequirementsList: []
+--- !u!114 &931772021914520551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: beac703e-def7-416d-8f73-0ad1415dda6e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb feels a knot in his stomach, a painful twist of impending loss
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3577
+    y: 663
+    width: 200
+    height: 100
+  children:
+  - 05c0dd00-65d5-482d-a1b9-4c7f0a6738e0
+  - fba412ae-5b9e-4dff-a617-cfd0e416fc9f
+  statusRequirementsList: []
+--- !u!114 &2482224640903750939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 4bf88489-655d-4731-8880-b24d7491d3e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, it feels like we\u2019re on different paths now. I think it might be
+    best if we go our separate ways"
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3327
+    y: 663
+    width: 200
+    height: 100
+  children:
+  - beac703e-def7-416d-8f73-0ad1415dda6e
+  statusRequirementsList: []
+--- !u!114 &2528323246029466830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 9217ec21-998f-421e-943a-6346567297ec
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Accept job offer
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: S
+  rect:
+    serializedVersion: 2
+    x: 192
+    y: 534
+    width: 200
+    height: 100
+  children:
+  - 7c5a5648-36d2-40c5-8dcf-5a76ff902fae
+  statusRequirementsList: []
+--- !u!114 &3330315392645298543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 60049aaa-42d6-4f18-a0bb-a12f644f061e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: As the days unfold...
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 5a1e573c10cad434d9c20ee24b634640, type: 3}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 797
+    y: 1026
+    width: 200
+    height: 100
+  children:
+  - 11129757-e13b-43f5-8d45-fa93e5508188
+  statusRequirementsList: []
+--- !u!114 &3377002131135495293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 99d22740-2801-4ae3-9ff3-aa128f1e69e7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Be practical
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: S
+  rect:
+    serializedVersion: 2
+    x: 1893
+    y: 57
+    width: 200
+    height: 100
+  children:
+  - 1145301c-f5d6-4402-9f5e-4f7a19a3f10d
+  statusRequirementsList: []
+--- !u!114 &3746129175387362459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c85b3cdf-7835-48e9-b033-ea3d09f82b9d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "With Mia\u2019s words hanging in the air and the silent hum of anticipation
+    building, Seb is now faced with a pivotal decision."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3058
+    y: 275
+    width: 200
+    height: 100
+  children:
+  - 9217ec21-998f-421e-943a-6346567297ec
+  - 8bce208e-5305-4ffd-97b1-8a577cd14f54
+  statusRequirementsList: []
+--- !u!114 &3984380800595303201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 11129757-e13b-43f5-8d45-fa93e5508188
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seb, while not financially stable, is passionately chasing his dream of opening
+    a jazz club. Mia, his unwavering support, lands a significant role in a film
+    that requires her to move to Paris.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1050
+    y: 1030
+    width: 200
+    height: 100
+  children:
+  - ccab3cc3-9d99-4855-bc55-c172aad05e83
+  statusRequirementsList: []
+--- !u!114 &4244012930132445457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 234a8286-4161-4add-8a29-2a77e746f0f5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Everything.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1785
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - c3ab2d8b-5df9-4ce1-a1b7-a83ad68c3ac4
+  statusRequirementsList: []
+--- !u!114 &4859017129124980558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 08bd5fa7-34b9-4227-b5f9-b312f868a0f8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I don't think we can do anything.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1224
+    y: 1625
+    width: 200
+    height: 100
+  children:
+  - 9e8afdf0-0e93-4d40-a666-5a73cafad7e5
+  statusRequirementsList: []
+--- !u!114 &5169289368923195993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 27adc3ca-0761-4973-920b-4231a43f4ddb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, I just want you to be true to yourself and your music. I\u2019m worried
+    you\u2019ll lose yourself in this."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2601
+    y: 129
+    width: 200
+    height: 100
+  children:
+  - c85b3cdf-7835-48e9-b033-ea3d09f82b9d
+  statusRequirementsList: []
+--- !u!114 &5725096610667374713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c3a28137-e5f6-477f-8876-e09606640620
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: As the days unfold...
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 5a1e573c10cad434d9c20ee24b634640, type: 3}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 803
+    y: 624
+    width: 200
+    height: 100
+  children:
+  - 9726f25e-438d-4d7f-9a65-4251f73dc194
+  statusRequirementsList: []
+--- !u!114 &5776674423473636674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: d3b97e38-7315-40bb-8c17-f61b63b179a6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I understand things have been hard, Mia. Maybe we can take some time apart
+    to think and reflect, then come back together with clearer minds and hearts.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2543
+    y: 1175
+    width: 200
+    height: 100
+  children:
+  - e888cdb8-5dc9-4823-95d4-2110b833eb56
+  statusRequirementsList: []
+--- !u!114 &6065313559655575235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 0df45aef-f6c3-422b-b99e-5411a14db329
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm always gonna love you
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2504
+    y: 1715
+    width: 200
+    height: 100
+  children:
+  - 62a18820-74d7-440c-b93a-10bd2d6dc04e
+  statusRequirementsList: []
+--- !u!114 &6457969454460541632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 5d423588-af1e-4ae2-bf3f-e2474eeab08c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, I\u2019ve got an audition! It\u2019s a big one, and I\u2019d really
+    love for you to be there."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1950
+    y: 622
+    width: 200
+    height: 100
+  children:
+  - f0730ee2-1cf0-4761-8078-130e3dea2d9d
+  statusRequirementsList: []
+--- !u!114 &6492478664216742305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 7abd1bf8-fd86-4415-8960-05a698f89256
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, we had plans and dreams together. We can\u2019t just throw it all away
+    because things are tough right now. Let\u2019s stick to our commitments and work
+    through this."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2543
+    y: 1031
+    width: 200
+    height: 100
+  children:
+  - cf94abef-6b03-489d-ac27-4fff96d832c9
+  statusRequirementsList: []
+--- !u!114 &6541925664697361712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 0b360995-d38f-4b54-9133-3f1b5840ce60
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia, the band has a tight schedule, but I\u2019ll try my best to be there.
+    I can\u2019t promise, but I\u2019ll make every effort to support you."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2685
+    y: 545
+    width: 200
+    height: 100
+  children:
+  - fa6ab0d7-a45f-472c-b587-6c5371eb1f1c
+  statusRequirementsList: []
+--- !u!114 &6674483344500004356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c07b9b5b-6ca0-4a5d-b3a6-36fc2798f608
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "One day, Mia approaches Seb with a spark in her eyes that he hasn\u2019t
+    seen in a while"
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1679
+    y: 623
+    width: 200
+    height: 100
+  children:
+  - 5d423588-af1e-4ae2-bf3f-e2474eeab08c
+  statusRequirementsList: []
+--- !u!114 &6921490145773935819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: fa6ab0d7-a45f-472c-b587-6c5371eb1f1c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Despite Seb''s intentions, he misses Mia''s audition due to band commitments.
+    Mia performs with a hint of disappointment and loneliness, resulting in a failed
+    audition. '
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 8300000, guid: 29cfbe79021ea7e4d978cdb077a09aff, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2913
+    y: 663
+    width: 200
+    height: 100
+  children:
+  - 7933a464-e7b0-4cd4-bcea-2187bca2cb72
+  statusRequirementsList: []
+--- !u!114 &7061554329800441425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: cf94abef-6b03-489d-ac27-4fff96d832c9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Seb, it\u2019s not just about sticking to plans. It\u2019s about feeling
+    connected and understood. Right now, I don\u2019t feel either with you. I need
+    space."
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2793
+    y: 1031
+    width: 200
+    height: 100
+  children:
+  - e3ac7737-87b9-4f49-b2c3-a9c8cafc39e7
+  statusRequirementsList: []
+--- !u!114 &7452182974399433769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: fba412ae-5b9e-4dff-a617-cfd0e416fc9f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Reflect
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: P
+  rect:
+    serializedVersion: 2
+    x: 3831
+    y: 722
+    width: 200
+    height: 100
+  children:
+  - d3b97e38-7315-40bb-8c17-f61b63b179a6
+  statusRequirementsList: []
+--- !u!114 &7625492974804041820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 1145301c-f5d6-4402-9f5e-4f7a19a3f10d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "I know it\u2019s not ideal, Mia. But it\u2019s a practical decision. This
+    job offers financial stability and security for both of us."
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2131
+    y: 95
+    width: 200
+    height: 100
+  children:
+  - c481320d-ca71-4890-a94d-8e9eb99fa50b
+  statusRequirementsList: []
+--- !u!114 &7779923718162277122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 9e8afdf0-0e93-4d40-a666-5a73cafad7e5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Cause now you get this, you gotta give it everything you got.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1535
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - 234a8286-4161-4add-8a29-2a77e746f0f5
+  statusRequirementsList: []
+--- !u!114 &8237758979022770564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 66c2f38d-5167-4469-b929-f98f0ae9a901
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You're gonna be in Paris, good jazz there.
+  speakerName: Seb
+  speakerType: 0
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3035
+    y: 1549
+    width: 200
+    height: 100
+  children:
+  - 72613f78-0ca4-4af9-8d84-55aafc8cd296
+  statusRequirementsList: []
+--- !u!114 &8779740440196239255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: e3ac7737-87b9-4f49-b2c3-a9c8cafc39e7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mia\u2019s words settle between them, marking a pause or end to their love\u2019s
+    melody. With a heavy, silent agreement, they step back, facing uncertain paths
+    alone, their shared dreams fading into the quiet night."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 3216
+    y: 1112
+    width: 200
+    height: 100
+  children: []
+  statusRequirementsList: []

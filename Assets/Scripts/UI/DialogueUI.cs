@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueSystem;
+using Player;
 using TMPro;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -47,6 +48,9 @@ namespace UI
         private List<CharacterRes> characterAvatarRes = new();
         
         private Dictionary<string, Sprite> _dictCharacterName2AvatarRes;
+        
+        private PlayerStatus _playerStatus;
+        
 
         // Find the player and get the PlayerConversant component
         // Add a listener to the next button click event
@@ -54,6 +58,7 @@ namespace UI
         void Awake()
         {
             GameObject.FindGameObjectWithTag("Player").TryGetComponent(out _playerConversant);
+            GameObject.FindGameObjectWithTag("Player").TryGetComponent(out _playerStatus);
             nextButton.onClick.AddListener(OnClickNext);
             
             _playerConversant.OnConversationUpdated += UpdateUI;
@@ -145,6 +150,11 @@ namespace UI
                 StartCoroutine(TransitionToNewBackground(background));
             }
             
+            var audioClip = _playerConversant.GetAudioClip();
+            if (audioClip != null)
+            {
+                GameManager.Instance.PlayAudioClip(audioClip);
+            }
         }
         
         private IEnumerator TransitionToNewBackground(Sprite newBackground)

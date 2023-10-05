@@ -1,0 +1,490 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8454268059033407000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: b373b777-6f22-44b5-a269-4a7840be2b6a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What are you going to play?
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1153
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - 16e1efc9-3774-4cc4-bff9-13463fa41714
+  statusRequirementsList: []
+--- !u!114 &-7914671685340816432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: f218f7cc-73ca-46d8-a32e-5c86a8d3552e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ...
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2153
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - 366cec2c-1eee-448e-85f1-bdd56518fcaf
+  statusRequirementsList: []
+--- !u!114 &-5297334583183551356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c6b1f032-58f8-4871-a011-6feeecff8537
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The End
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: 2b9f4b11f95e5ae4c9ead04f87bc358a, type: 3}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2863
+    y: 520
+    width: 200
+    height: 100
+  children: []
+  statusRequirementsList: []
+--- !u!114 &-4529478205499404603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 8868f9f6-bbc1-42fa-8d16-d303843d35ce
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ..
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1903
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - f218f7cc-73ca-46d8-a32e-5c86a8d3552e
+  statusRequirementsList: []
+--- !u!114 &-3743980249062718079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 234b0c0b-cf4e-47a7-8d40-a833a02906ac
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ......
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2903
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - 677ec8db-13b0-42a2-b8a2-ac7aaea91f72
+  statusRequirementsList: []
+--- !u!114 &-2176569429742456856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 096ad28a-378a-4e5a-912b-7d1eb388d714
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Kiss her
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2613
+    y: 520
+    width: 200
+    height: 100
+  children:
+  - c6b1f032-58f8-4871-a011-6feeecff8537
+  statusRequirementsList: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1910950879e1ba4eb77b0b117761e74, type: 3}
+  m_Name: Epilogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5765245998119409562}
+  - {fileID: 8690842394317847881}
+  - {fileID: 7671589268583425789}
+  - {fileID: 424604233471709218}
+  - {fileID: -8454268059033407000}
+  - {fileID: 182579850374341944}
+  - {fileID: 5890859902355259757}
+  - {fileID: -4529478205499404603}
+  - {fileID: -7914671685340816432}
+  - {fileID: 1605825261016657610}
+  - {fileID: 4906165016653483833}
+  - {fileID: -3743980249062718079}
+  - {fileID: 6484134574862678825}
+  - {fileID: -2176569429742456856}
+  - {fileID: -5297334583183551356}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &182579850374341944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 16e1efc9-3774-4cc4-bff9-13463fa41714
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Play improvised Jazz
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1403
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - c9bd58b3-479b-44a3-8fce-5d67ffb501be
+  statusRequirementsList: []
+--- !u!114 &424604233471709218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c94f1289-0567-452d-9d44-bcfb00ab86c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hey Seb, it''s Christmas Eve. The guests are expecting something festive. '
+  speakerName: Boss
+  speakerType: 1
+  background: {fileID: 21300000, guid: 5ee0af9fb0d670a4d98e8d16f2719fb2, type: 3}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 903
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - b373b777-6f22-44b5-a269-4a7840be2b6a
+  statusRequirementsList: []
+--- !u!114 &1605825261016657610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 366cec2c-1eee-448e-85f1-bdd56518fcaf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ....
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2403
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - a07c7954-2404-4371-8f1e-c6877c227f94
+  statusRequirementsList: []
+--- !u!114 &4906165016653483833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: a07c7954-2404-4371-8f1e-c6877c227f94
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: .....
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2653
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - 234b0c0b-cf4e-47a7-8d40-a833a02906ac
+  statusRequirementsList: []
+--- !u!114 &5765245998119409562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: def4c493-c416-410b-80d0-d64454c91b0e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Years have woven their tales, leaving Seb with his jazz club, a sanctuary
+    of pure, undiluted jazz, and Mia with her name in lights, a celebrated actress.
+    The night is young, the air vibrates with the subtle hum of conversations and
+    laughter, the dim light casting soft shadows on the walls.
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 21300000, guid: b5200b99080959f4f99bad7a05445243, type: 3}
+  audioClip: {fileID: 8300000, guid: fa1b461205233764ebaa94a0249a484e, type: 3}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 122
+    y: 159
+    width: 200
+    height: 100
+  children:
+  - 1a2f9378-c081-4343-983e-5c8f75307197
+  statusRequirementsList: []
+--- !u!114 &5890859902355259757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: c9bd58b3-479b-44a3-8fce-5d67ffb501be
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: .
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 1653
+    y: 159
+    width: 200
+    height: 100
+  children:
+  - 8868f9f6-bbc1-42fa-8d16-d303843d35ce
+  statusRequirementsList: []
+--- !u!114 &6484134574862678825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 677ec8db-13b0-42a2-b8a2-ac7aaea91f72
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey, I just heard you play and...
+  speakerName: Mia
+  speakerType: 1
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 2363
+    y: 520
+    width: 200
+    height: 100
+  children:
+  - 096ad28a-378a-4e5a-912b-7d1eb388d714
+  statusRequirementsList: []
+--- !u!114 &7671589268583425789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: cfe1e022-f8e7-4eff-8932-8de6ca26ea30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Then, as if pulled by the invisible strings of the past, Seb settles on
+    the piano bench, his fingers finding the keys with practiced ease. The first
+    notes of the melody they once shared, the soundtrack of their love story, fill
+    the room, wrapping around every heart, but none more so than Mia\u2019s and Seb\u2019s."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 653
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - c94f1289-0567-452d-9d44-bcfb00ab86c8
+  statusRequirementsList: []
+--- !u!114 &8690842394317847881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3499cabd7d706459c7d814146b6b9f, type: 3}
+  m_Name: 1a2f9378-c081-4343-983e-5c8f75307197
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "The door swings open, admitting a burst of cool air and a figure unmistakably
+    familiar to Seb. Mia. Time might have added layers to their lives, but it hasn\u2019t
+    dulled the spark of recognition that flits across their eyes. For a suspended
+    moment, the world narrows down to the space they occupy, silent and heavy with
+    memories, sweet and bitter, lost and found."
+  speakerName: 
+  speakerType: 2
+  background: {fileID: 0}
+  audioClip: {fileID: 0}
+  listAddBuffID: 
+  listRemoveBuffID: 
+  personalityType: 
+  rect:
+    serializedVersion: 2
+    x: 400
+    y: 160
+    width: 200
+    height: 100
+  children:
+  - cfe1e022-f8e7-4eff-8932-8de6ca26ea30
+  statusRequirementsList: []
