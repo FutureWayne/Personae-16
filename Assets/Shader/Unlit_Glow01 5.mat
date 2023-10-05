@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_Glow01 3
+  m_Name: Unlit_Glow01 5
   m_Shader: {fileID: 4800000, guid: bf1913f41c02b2d4a9130a04ada7e112, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -31,6 +31,6 @@ Material:
     m_Floats:
     - _FresnelPower: 0.68
     m_Colors:
-    - _Color: {r: 3.3997304, g: 2.9271624, b: 11.181761, a: 1}
+    - _Color: {r: 2.9271624, g: 8.780148, b: 11.181761, a: 1}
     - _ScrollDirection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
