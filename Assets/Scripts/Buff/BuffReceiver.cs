@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Player;
 using DialogueSystem;
 using UnityEngine;
+using TMPro;
 
 namespace Buff
 {
@@ -11,6 +12,9 @@ namespace Buff
         
         private PlayerStatus _playerStatus;
         private PlayerConversant _playerConversant;
+
+        public string result = "";
+        public TMP_Text personalityResults;
         
         private void Start()
         {            
@@ -22,16 +26,38 @@ namespace Buff
         
         public void AddBuff(BuffData buffData)
         {
+            if (buffData.id > 1000)
+            {
+                // Modify the personality type
+
+                result += buffData.buffName;
+                _playerStatus.PersonalityType = result;
+                if(_playerStatus.PersonalityType.Length == 4)
+                    _playerStatus.InitPersonaValueAndStatus();
+                personalityResults.SetText("It looks like your personality type is " + result + ". Let's see how you interact in a social setting.");
+                return;
+            }
+
             if (_dictBuffDuration.TryGetValue(buffData, out var value))
             {
                 value.Add(buffData.duration);
+                _playerStatus.InitPersonaValueAndStatus();
+                //Debug.Log(_playerStatus.PersonalityType);
+                //personalityResults.SetText("It looks like your personality type is " + result + ". Let's see how you interact in a social setting.");
+                return;
+            }
+
+
+            if (_dictBuffDuration.ContainsKey(buffData))
+            {
+                _dictBuffDuration[buffData].Add(buffData.duration);
             }
             else
             {
                 _dictBuffDuration.Add(buffData, new List<int>() {buffData.duration});
             }
             
-            _playerStatus.OnUpdateBuffEffect(buffData.trait, buffData.personaModifier, buffData.baseFavorabilityModifier);
+            //_playerStatus.OnUpdateBuffEffect(buffData.trait, buffData.personaModifier, buffData.baseFavorabilityModifier);
         }
 
         public void RemoveBuff(BuffData buffData)

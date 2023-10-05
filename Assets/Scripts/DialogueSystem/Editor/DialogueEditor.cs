@@ -24,7 +24,7 @@ namespace DialogueSystem.Editor
         [NonSerialized]
         private Vector2 _scrollPosition = Vector2.zero;
         
-        private const float CanvasSize = 4000;
+        private const float CanvasSize = 15000;
         private const float BackgroundSize = 50;
         
         [MenuItem("Window/Dialogue Editor")]

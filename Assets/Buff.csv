@@ -1,4 +1,4 @@
-ID,BuffName,Trait,Modifier (INFP+/ESFJ-),Duration
+ID,BuffName,Trait,Modifier (INFP-/ESTJ+),Duration
 1,Sociability,1,1,1
 2,Reflectiveness,1,3,1
 3,Practicality,2,2,1
@@ -7,3 +7,23 @@ ID,BuffName,Trait,Modifier (INFP+/ESFJ-),Duration
 6,Empathy,3,-2,1
 7,Decisiveness,4,2,1
 8,Adaptability,4,-2,1
+9,TalkFrontDesk,1,3,1
+10,LookFrontDesk,1,-3,1
+11,RSVPYes,4,3,1
+12,RSVPNo,4,-3,1
+13,AskGame,1,4,1
+14,ObserveGame,1,-4,1
+15,WatchGame2,2,-3,1
+16,PlayGame2,2,3,1
+17,WatchGame4,4,3,1
+18,PlayGame4,4,-3,1
+19,AcceptInvite1,1,-4,1
+20,RejectInvite1,1,-3,1
+21,RejectInvite2,2,4,1
+22,FollowFacts,3,4,1
+23,Trust,3,-4,1
+24,StartHelp1,1,3,1
+25,StartHelp3,3,3,1
+26,Leave,1,-3,1
+27,AskHelp1,1,2,1
+28,AskHelp3,3,-3,1

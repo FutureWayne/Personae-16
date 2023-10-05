@@ -5,6 +5,8 @@ using System.Linq;
 using Buff;
 using Player;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 namespace DialogueSystem
 {
@@ -21,8 +23,11 @@ namespace DialogueSystem
         
         private PlayerStatus _playerStatus;
         
-        public event Action OnConversationUpdated; 
-        
+        public event Action OnConversationUpdated;
+
+        //public GameObject dialogueBox;
+        //public GameObject personalityResults;
+
         IEnumerator Start()
         {
             yield return new WaitForSeconds(1);
@@ -72,6 +77,9 @@ namespace DialogueSystem
         {
             if (_currentNode is null || !HasNextNode())
             {
+                //TriggerExitAction();
+                //dialogueBox.SetActive(false);
+                //personalityResults.SetActive(true);
                 return;
             }
             

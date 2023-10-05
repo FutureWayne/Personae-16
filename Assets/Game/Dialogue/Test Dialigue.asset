@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1910950879e1ba4eb77b0b117761e74, type: 3}
-  m_Name: Entry
+  m_Name: Test Dialigue
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 2948526004747985423}
@@ -283,14 +283,14 @@ MonoBehaviour:
   m_Name: 479928b4-c339-441f-b353-c406cd4340b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Are you ready to have your personality test? Answer these 4 simple questions
-    to get started.
+  text: Hello and welcome to Personae 16. Let's see who we are working with. Please
+    fill out this personality test to the best of your ability.
   children:
   - 255e8737-71e7-40a2-898b-7e14c723c0b9
   rect:
     serializedVersion: 2
     x: 2
-    y: 221
+    y: 218
     width: 200
     height: 100
   listAddBuffID: 

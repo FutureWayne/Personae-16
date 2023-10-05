@@ -64,15 +64,17 @@ namespace Player
         
         private void Awake()
         {
-            InitPersonaValueAndStatus();
+            //InitPersonaValueAndStatus();
         }
         
-        private void InitPersonaValueAndStatus()
+        public void InitPersonaValueAndStatus()
         {
             foreach (EPersonalityTraits trait in Enum.GetValues(typeof(EPersonalityTraits)))
             {
                 if (trait is < EPersonalityTraits.Mind or > EPersonalityTraits.Tactics) continue;
                 var personaTraitIndex = (int)trait;
+                Debug.Log(personaTraitIndex.ToString());
+                Debug.Log(_playerPersonalityType);
                 var playerPersonaString = _playerPersonalityType[personaTraitIndex];
                 var crushPersonaString = _crushPersonalityType[personaTraitIndex];
 
