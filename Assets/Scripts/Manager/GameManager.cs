@@ -9,6 +9,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private List<Dialogue> listDialogues;
     
+    
+    [SerializeField]
+    private Transform dialogueCanvas;
+    
+    [SerializeField]
+    private Transform StartScreenCanvas;
+    
     private PlayerConversant _playerConversant;
     
     private int _currentDialogueIndex = 0;
@@ -33,23 +40,19 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameObject.FindGameObjectWithTag("Player").TryGetComponent(out _playerConversant);
-        
-        
-        _playerConversant.StartDialogue(listDialogues[_currentDialogueIndex]);
-       
     }
-
-
-
-    // Update is called once per frame
-    void Update()
+    
+    
+    public void ResumeDialogue()
     {
-        
+        StartScreenCanvas.gameObject.SetActive(false);
+        dialogueCanvas.gameObject.SetActive(true);
+        _playerConversant.StartDialogue(listDialogues[_currentDialogueIndex]);
     }
 
     public void OnDialogueEnds()
     {
+        dialogueCanvas.gameObject.SetActive(false);
         _currentDialogueIndex++;
-        _playerConversant.StartDialogue(listDialogues[_currentDialogueIndex]);
     }
 }
