@@ -12,6 +12,8 @@ namespace UI
         [SerializeField]
         TextMeshProUGUI aiResponseText;
         [SerializeField]
+        TextMeshProUGUI speakerNameText;
+        [SerializeField]
         Button nextButton;
         [SerializeField]
         Transform choiceRoot;
@@ -58,17 +60,15 @@ namespace UI
             }
             
             var isChoosing = _playerConversant.IsChoosing();
-            aiResponseRoot.gameObject.SetActive(!isChoosing);
+            
+            aiResponseText.text = _playerConversant.GetCurrentNodeText();
+            speakerNameText.text = _playerConversant.GetCurrentSpeakerName();
+            nextButton.gameObject.SetActive(_playerConversant.HasNextNode() && !isChoosing);
             choiceRoot.gameObject.SetActive(isChoosing);
             
             if (isChoosing)
             {
                 BuildChoiceList();
-            }
-            else
-            {
-                aiResponseText.text = _playerConversant.GetCurrentNodeText();
-                nextButton.gameObject.SetActive(_playerConversant.HasNextNode());
             }
         }
 
@@ -81,6 +81,12 @@ namespace UI
 
             foreach (var node in _playerConversant.GetChoiceNodes())
             {
+                // Check node condition
+                if (!_playerConversant.IsNodeStatusRequirementMet(node))
+                {
+                    continue;
+                }
+                
                 var choiceButton = Instantiate(choicePrefab, choiceRoot);
                 var textMeshProUGUI = choiceButton.GetComponentInChildren<TextMeshProUGUI>();
                 textMeshProUGUI.text = node.GetText();

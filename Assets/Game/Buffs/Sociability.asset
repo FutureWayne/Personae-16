@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64af18f3a112bfe46a02d8c996003e83, type: 3}
-  m_Name: Practical
+  m_Name: Sociability
   m_EditorClassIdentifier: 
-  id: 6
-  buffName: Practical
-  aspect: 1
-  modifierA: -2
-  modifierB: 3
-  duration: 3
-  personaModifier: 2
+  id: 1
+  buffName: Sociability
+  trait: 0
+  duration: 1
+  personaModifier: 1
+  baseFavorabilityModifier: 0

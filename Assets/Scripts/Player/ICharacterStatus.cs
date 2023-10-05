@@ -4,9 +4,9 @@
 
 public interface ICharacterStatus
 {
-    Dictionary<ECharacterStatus, int> DictStatus { get; set; }
+    Dictionary<ECharacterStatusType, int> DictStatus { get; set; }
     
-    void SetStatus(ECharacterStatus status, int value);
-    int GetStatus(ECharacterStatus status);
+    void SetStatus(ECharacterStatusType statusType, int value);
+    int GetStatus(ECharacterStatusType statusType);
     void InitStatus();
 }
