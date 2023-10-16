@@ -17,7 +17,7 @@ namespace DialogueSystem
         private readonly Dictionary<string, DialogueNode> _nodeLookup = new(); // node look up dic - {node.name: node}
 
         // Build node lookup dictionary
-        private void OnValidate() {
+        public void OnValidate() {
             _nodeLookup.Clear();
             foreach (DialogueNode node in GetAllNodes())
             {
