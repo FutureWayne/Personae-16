@@ -23,6 +23,7 @@ namespace DialogueSystem
         void Start()
         {
             _playerStatus = GetComponent<PlayerStatus>();
+            _currentDialogue.OnValidate();
         }
 
         public bool IsActive()
@@ -36,6 +37,7 @@ namespace DialogueSystem
         public void StartDialogue(Dialogue dialogue)
         {
             _currentDialogue = dialogue;
+            _currentDialogue.OnValidate();
             _currentNode = _currentDialogue.GetRootNode();
             
             TriggerEnterAction();
