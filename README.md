@@ -67,5 +67,6 @@ The PlayerConversant class plays a pivotal role in the dialogue system by managi
 
 ### BuffCfgReader
 - Utility class for importing buffs from a CSV file.
-  ![BuffSystem](https://github.com/FutureWayne/cubism-mbti/assets/39150337/0a478a4c-c416-4eac-b1ab-b8a971b01be1)
+
+![BuffSystem](https://github.com/FutureWayne/cubism-mbti/assets/39150337/0a478a4c-c416-4eac-b1ab-b8a971b01be1)
 
