@@ -1,4 +1,7 @@
-# Personae16 Tech Doc
+# Unity Dialogue Editor Tech Doc
+
+Check the visual novel made with this editor
+https://www.futurewayne.com/visual-novel
 
 ## Tech Specs
 - **Programming Language:** C#
